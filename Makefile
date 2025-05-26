@@ -3,9 +3,9 @@
 # Brandon Amos <http://bamos.github.io> and
 # Ellis Michael <http://ellismichael.com>
 
-WEBSITE_DIR=$(HOME)/repos/website
-WEBSITE_PDF=$(WEBSITE_DIR)/data/cv.pdf
-WEBSITE_MD=$(WEBSITE_DIR)/_includes/cv.md
+WEBSITE_DIR=${HOME}/Documents/Work/Obsidian/documents/projects/website/colefaraday.github.io
+WEBSITE_PDF=$(WEBSITE_DIR)/assets/pdf/cv.pdf
+WEBSITE_MD=$(WEBSITE_DIR)/_pages/cv.md
 WEBSITE_DATE=$(WEBSITE_DIR)/_includes/last-updated.txt
 
 TEMPLATES=$(shell find templates -type f)
@@ -45,11 +45,11 @@ viewpdf: $(PDF)
 	gnome-open $(PDF)
 
 stage: $(PDF) $(MD)
-	git -C $(WEBSITE_DIR) checkout $(WEBSITE_PDF) $(WEBSITE_MD) $(WEBSITE_DATE)
+	git -C $(WEBSITE_DIR) checkout $(WEBSITE_PDF) $(WEBSITE_MD) # $(WEBSITE_DATE)
 	git -C $(WEBSITE_DIR) pull --rebase
 	cp $(PDF) $(WEBSITE_PDF)
 	cp $(MD) $(WEBSITE_MD)
-	date +%Y-%m-%d > $(WEBSITE_DATE)
+	# date +%Y-%m-%d > $(WEBSITE_DATE). I don't need this.
 
 jekyll: stage
 	cd $(WEBSITE_DIR) && bundle exec jekyll server
