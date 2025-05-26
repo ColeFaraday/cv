@@ -1,6 +1,8 @@
 \documentclass[11pt,letter,sans]{moderncv}
 
 \usepackage{longtable}
+\usepackage{anyfontsize} % arbitrary font size support
+\usepackage{footmisc} % footnote support
 \setlength{\LTleft}{0pt}
 \definecolor{tab_highlight}{HTML}{f0c967}
 
@@ -10,6 +12,58 @@
 \colorlet{firstnamecolor}{color1}
 
 \usepackage[top=1in, bottom=1in, left=.7in, right=.7in]{geometry}
+
+% for the bibliography
+\usepackage[defernumbers=true,backend=biber, maxbibnames=99, giveninits=true, style=publist, url=true, doi=true, isbn=true, plauthorhandling=highlight, plsorting=ddnt, marginyear=true]{biblatex}
+\plauthorname[Coleridge]{Faraday}
+\addbibresource{publications/<< all_publications.file >>}
+\addbibresource{publications/<< all_publications.talk_file >>}
+
+\normalmarginpar
+
+\renewcommand*\plmarginyear[1]{%
+\raggedright\small\textbf{#1}%
+}
+
+\renewbibmacro*{date}{%
+  \iffieldundef{month}
+    {}
+    {\mkbibmonth{\thefield{month}}\space}%
+  \iffieldundef{year}
+    {}
+    {\thefield{year}}%
+}
+
+
+% \DeclareBibliographyDriver{misc}{%
+%   \usebibmacro{bibindex}%
+%   \usebibmacro{begentry}%
+%   \printfield{title}%
+%   \setunit{\addcomma\space}%
+%   \printfield{eventtitle}%
+%   \setunit{\addcolon\space}%
+%   \printlist{location}%
+%   \setunit{\space}%
+%   \printtext{(}%
+%   \usebibmacro{date}%
+%   \printtext{)}%
+%   \usebibmacro{finentry}}
+
+
+% \DeclareBibliographyDriver{misc}{%
+%   \usebibmacro{bibindex}%
+%   \usebibmacro{begentry}%
+%   \printfield{title}%
+%   \setunit{\addcomma\space}%
+%   \printfield{eventtitle}%
+%   \setunit{\addcolon\space}%
+%   \printlist{location}%
+%   \setunit{\space}%
+%   \printtext{(}%
+%   \usebibmacro{date}%
+%   \printtext{)}%
+%   \usebibmacro{finentry}}
+
 
 % Define filled heart symbol
 \DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
@@ -21,6 +75,9 @@
 \usepackage{bbm}
 \renewcommand*{\twittersocialsymbol}{$\mathbbmss{X}$~}
 
+% Use symbols for footnotes
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
 \usepackage{lastpage}
 \cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
 
@@ -28,14 +85,16 @@
 \name{<< name.first >>}{<< name.last >>}
 \email{<< email >>}
 \homepage{<< url >>}
-\social[linkedin]{<<social.linkedin>>}
-\social[twitter]{<<social.twitter>>}
-\social[github]{<<social.github>>}
+\social[orcid]{<< social.orcid >>}
+% \social[linkedin]{<<social.linkedin>>}
+% \social[twitter]{<<social.twitter>>}
+% \social[github]{<<social.github>>}
 \extrainfo{\small Last updated on \today}
 
 \frenchspacing
 
 \begin{document}
+\nocite{*}
 \makecvtitle
 \vspace{-1cm}
 

@@ -4,16 +4,9 @@
 % \begin{itemize}
 ~< for award in items >~
   ~< if award.url >~
-    \href{<<award.url>>}{<<award.title>>}
-  ~< else >~
-    << award.title >>
-  ~< endif >~
-  \hfill << award['year'] >>
-  ~< if award.descr >~
-    \\ {\scriptsize \color{gray}{<< award.descr >>} \par}
-  ~< else >~
+    \href{<<award.url>>}{<<award.title>>}~< else >~ << award.title >>~< endif >~~< if award.descr >~, {\scriptsize \color{gray}{<< award.descr >>}}~< endif >~
+  \hfill << award['year'] >>~< if award.note >~, \footnote{<< award.note >>}~< endif >~
     \\[0.5mm]
-  ~< endif >~
 ~< endfor >~
 % \end{itemize}
 ~< endblock body >~

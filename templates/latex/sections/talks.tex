@@ -2,23 +2,29 @@
 
 ~< block body >~
 Slides for my major presentations are available
-\href{https://bamos.github.io/presentations/}{here}
+\href{https://colefaraday.github.io/home/talks/}{here}
 under a CC-BY license.
 
-\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6.2in}@{\hspace{1em}}r}
-  ~< for item in items >~
-    \hfill << loop.index >>. &
-    ~< if item.url >~
-      \href{<< item.url >>}{\emph{<< item.title >>}}~\textemdash~
-    ~< else >~
-      \emph{<< item.title >>}~\textemdash~
-    ~< endif >~
-    ~< if item.location_url >~
-      \href{<< item.location_url >>}{<< item.location >>}
-    ~< else >~
-      << item.location >>
-    ~< endif >~
-  & << item.year >> \\
-  ~< endfor >~
-\end{longtable}
+~< for item in items >~
+	\subsection{<< item.name >>}
+	<< item.details >>
+~< endfor >~
+
+% \begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6.2in}@{\hspace{1em}}r}
+%   ~< for item in items >~
+%     \hfill << loop.index >>. &
+%     ~< if item.url >~
+%       \href{<< item.url >>}{\emph{<< item.title >>}}~\textemdash~
+%     ~< else >~
+%       \emph{<< item.title >>}~\textemdash~
+%     ~< endif >~
+%     ~< if item.location_url >~
+%       \href{<< item.location_url >>}{<< item.location >>}
+%     ~< else >~
+%       << item.location >>
+%     ~< endif >~
+%   & << item.year >> \\
+%   ~< endfor >~
+% \end{longtable}
+
 ~< endblock body >~

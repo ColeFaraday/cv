@@ -94,10 +94,13 @@ def get_pub_md(context, config):
         #         pub['link'], title)
         title = title.replace("\n", " ")
 
-        assert('_venue' in pub and 'year' in pub)
-        year_venue = "{} {}".format(pub['_venue'], pub['year'])
+        # assert('_venue' in pub and 'year' in pub)
+        # year_venue = "{} {}".format(pub['_venue'], pub['year'])
+        #
+        # highlight = 'selected' in pub and pub['selected'].lower() == 'true'
+        year_venue = "{} {}".format(pub.get('_venue', ''), pub['year'])
+        highlight = pub.get('selected', '').lower() == 'true'
 
-        highlight = 'selected' in pub and pub['selected'].lower() == 'true'
         img_str = f'<img src="images/publications/{pub["ID"]}.png" onerror="this.style.display=\'none\'" class="publicationImg" />'
         links = []
         abstract = ''
@@ -295,8 +298,7 @@ def get_pub_latex(context, config):
         if 'link' in pub:
             title = r"\href{{{}}}{{{}}} ".format(pub['link'], title)
 
-        assert('_venue' in pub and 'year' in pub)
-        year_venue = "{} {}".format(pub['_venue'], pub['year'])
+        year_venue = "{} {}".format(pub.get('_venue', ''), pub['year'])
 
         links = []
         for base in ['code', 'slides', 'talk']:
@@ -365,7 +367,15 @@ def get_pub_latex(context, config):
 
     else:
         assert False
-    contents['details'] = details
+    # Use \printbibliography to print the bibliography instead of manually constructing it.
+    if config['use_print_bibliography']:
+        contents['details'] = [ 
+                                             dict(name="Journal Articles", details = "\leavevmode\printbibliography[type=article, heading=none, resetnumbers=true]"),
+                                             dict(name="Conference Papers", details = "\leavevmode\printbibliography[type=inproceedings, heading=none, resetnumbers=true]")
+                                             ]
+    else:
+        contents['details'] = details
+
     contents['file'] = config['file']
 
     return contents
@@ -544,7 +554,14 @@ class RenderContext(object):
             elif section_tag in ['coursework', 'education', 'honors',
                                  'positions', 'research', 'skills', 'service',
                                  'teaching', 'talks', 'advising']:
-                section_data['items'] = section_content
+                if yaml_data["talks_from_bib"] and section_tag == "talks":
+                    section_data['items'] = [ 
+                                             dict(name="Conference Talks", details = "\leavevmode\printbibliography[subtype=conferencetalk, heading=none, resetnumbers=true]"),
+                                             dict(name="Conference Posters", details = "\leavevmode\printbibliography[subtype=conferenceposter, heading=none, resetnumbers=true]"),
+                                             dict(name="Outreach Talks", details = "\leavevmode\printbibliography[subtype=othertalk, heading=none, resetnumbers=true]")
+                                             ]
+                else:
+                    section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             elif 'publications' in section_tag:

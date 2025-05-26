@@ -2,9 +2,11 @@
 
 ~< block body >~
 ~< for item in items >~
-  << item.name >>
-  (<< item.short >>),
-  << item.position >>
-  \hfill << item.semester>> \\
+\begin{minipage}[t]{0.8\textwidth}
+	\textbf{<< item.name >>} (<< item.short >>), << item.position >>
+\end{minipage}\hfill
+\begin{minipage}[t]{0.2\textwidth}
+  \hfill << item.semester >> 
+\end{minipage}\\
 ~< endfor >~
 ~< endblock body >~

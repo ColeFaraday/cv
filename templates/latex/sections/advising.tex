@@ -1,12 +1,17 @@
 ~< extends "section.tex" >~
 
+
 ~< block body >~
 ~< for item in items >~
+\begin{minipage}[t]{0.8\textwidth}
   ~< if item.url >~
-    \href{<< item.url >>}{<< item.name >>} (<< item.details >>)
+	\textbf{\href{<< item.url >>}{<< item.name >>}} << item.details >>
   ~< else >~
-    << item.name >> (<< item.details >>)
+	\textbf{<< item.name >>}. << item.details >>
   ~< endif >~
-  \hfill << item.year >> \\
+\end{minipage}\hfill
+\begin{minipage}[t]{0.2\textwidth}
+  \hfill << item.year >> 
+\end{minipage}\\
 ~< endfor >~
 ~< endblock body >~
