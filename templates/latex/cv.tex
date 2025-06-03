@@ -13,6 +13,10 @@
 
 \usepackage[top=1in, bottom=1in, left=.7in, right=.7in]{geometry}
 
+
+\newcommand*\publistbasestyle{nature}
+
+
 % for the bibliography
 \usepackage[defernumbers=true,backend=biber, maxbibnames=99, giveninits=true, style=publist, url=true, doi=true, isbn=true, plauthorhandling=highlight, plsorting=ddnt, marginyear=true]{biblatex}
 \plauthorname[Coleridge]{Faraday}
@@ -21,6 +25,7 @@
 
 \normalmarginpar
 
+% Puts the year in the right margin instead of the left
 \renewcommand*\plmarginyear[1]{%
 \raggedright\small\textbf{#1}%
 }
@@ -34,6 +39,10 @@
     {\thefield{year}}%
 }
 
+% https://tex.stackexchange.com/questions/313307/mastersthesis-entry-results-in-ma-thesis-output-instead-of-masters-thesis
+\DefineBibliographyStrings{english}{%
+  mathesis = {M.Sc.\ thesis},
+}
 
 % \DeclareBibliographyDriver{misc}{%
 %   \usebibmacro{bibindex}%
@@ -63,6 +72,7 @@
 %   \usebibmacro{date}%
 %   \printtext{)}%
 %   \usebibmacro{finentry}}
+
 
 
 % Define filled heart symbol

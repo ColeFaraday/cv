@@ -1,12 +1,34 @@
-## <i class="fa fa-chevron-right"></i> Publications
-
-<!-- I usually publish at machine learning conferences, -->
-<!-- including {{ venue_counts }}. -->
-<!-- <a href="https://scholar.google.com/citations?user={{ scholar_id }}">Google Scholar</a> -->
-<!-- reports {{ scholar_stats.citations }} citations and an h-index of {{ scholar_stats.h_index}}. -->
-<!-- The selected publications I am a primary author on are <span style='background-color: #ffffd0'>highlighted.</span> -->
+## Publications
 
 [<a href="https://scholar.google.com/citations?user={{ scholar_id }}">Google Scholar</a>: {{ scholar_stats.citations }} citations and an h-index of {{ scholar_stats.h_index}}] <br>
-Selected publications I am a primary author on are <span style='background-color: #ffffd0'>highlighted.</span>
 
-{{ content.details }}
+{% raw %}
+{% assign pub_page = site.pages | where: "permalink", "/publications/" | first %}
+<div class="publications">
+
+{%- for section in pub_page.sections %}
+  <a id="{{section.text}}"></a>
+  <p class="bibtitle">{{section.text}}</p>
+  {%- for y in pub_page.years %}
+
+    {%- comment -%}  Count bibliography in actual section and year {%- endcomment -%}
+    {%- capture citecount -%}
+    {%- bibliography_count -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] -%}
+    {%- endcapture -%}
+
+    {%- comment -%} If exist bibliography in actual section and year, print {%- endcomment -%}
+    {%- if citecount !="0" %}
+
+      <h2 class="year">{{y}}</h2>
+      {% bibliography -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] %}
+
+    {%- endif -%}
+
+  {%- endfor %}
+
+{%- endfor %}
+
+</div>
+
+
+{% endraw %}

@@ -34,19 +34,7 @@ order:
   # - [skills, Skills]
   # - [NEWPAGE, NONE]
 
-about: |
-  <p align='justify'>
-  I am a research scientist in the
-  <b>Fundamental AI Research (FAIR)</b>
-  group at
-  <b>Meta</b> in NYC
-  and study foundational topics in <b>machine learning</b> and
-  <b>optimization</b>, recently involving
-  reinforcement learning, control, transport, flows, and diffusion.
-  My research is on learning systems that understand and interact with our world
-  and focuses on integrating structural information and domain knowledge into
-  these systems to represent non-trivial reasoning operations.
-  </p><br>
+about: I am Coleridge (Cole) Faraday, a PhD student in theoretical physics at the University of Cape Town (UCT), South Africa, supervised by Assoc. Prof. \href{https://www.wahorowitz.com/}{W. A. Horowitz}. My research is within high-energy nuclear theory, focusing on the quark-gluon plasma (QGP)—a novel state of matter that is formed at extremely high temperatures and densities. I am particularly interested in making connection with experimental observations at RHIC and the LHC, understanding whether QGP is formed in \href{https://inspirehep.net/literature/2848284}{small collision systems}, and using energy loss to \href{https://arxiv.org/abs/2505.14568}{quantify properties of this novel fluid}.
 
 # current_position:
 #   - place: Meta, Fundamental AI Research (FAIR)
@@ -60,7 +48,6 @@ education:
     degree: PhD. in Physics
     dates: 2025 -- Present # May 19, 2019
     details:
-      # - "Thesis: \\href{https://github.com/bamos/thesis}{\\textit{Differentiable Optimization-Based Modeling for Machine Learning}}"
       - "Supervisor: Assoc.\ Prof.\ W. A. Horowitz"
   - school: University of Cape Town
     location: Cape Town, South Africa
@@ -234,7 +221,7 @@ honors:
   - title: Science Faculty Scholarship
     year: 2020
     descr: University of Cape Town
-  - title: Science Entrance Scholarship
+  - title: Science Faculty Entrance Scholarship
     year: 2019
     descr: University of Cape Town
   - title: Dean’s Merit List
@@ -490,7 +477,7 @@ service:
     - "Proceedings of the 68th Annual Conference of the South African Institute of Physics"
 
   main:
-    - details: Postgraduate representative for Science Faculty, University of Cape Town
+    - details: Postgraduate representative for Physics Department, University of Cape Town
       year: 2025 -- Present
     # - details: NeurIPS Area Chair
     #   year: 2024
