@@ -3,13 +3,15 @@ name:
   last: Faraday
 email: frdcol002@myuct.ac.za
 pdf: /data/cv.pdf
-src: https://github.com/bamos/cv
-url: "colefaraday.github.io"
+src: https://github.com/ColeFaraday/cv
+url: "coleridgefaraday.com"
 social:
   # github: colefaraday
   # twitter: brandondamos
   # linkedin: bdamos
   google_scholar: x9F8UrwAAAAJ
+  arxiv: faraday_c_1
+  inspirehep_id: 2661508
   orcid: 0000-0003-3063-148X
 
 # LaTeX formatting

@@ -91,14 +91,18 @@
 \usepackage{lastpage}
 \cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
 
+
 \AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}, allcolors=color1, colorlinks}}
 \name{<< name.first >>}{<< name.last >>}
 \email{<< email >>}
 \homepage{<< url >>}
 \social[orcid]{<< social.orcid >>}
+% \social[inspire]{<< social.inspirehep_id >>}
 % \social[linkedin]{<<social.linkedin>>}
-% \social[twitter]{<<social.twitter>>}
+% \social[twitter]{colefaraday}
+\social[inspire]{<< social.inspirehep_id >>} % NB: I have a modified version of moderncv since the Inspire link is incorrect (authoris -> authors)
 % \social[github]{<<social.github>>}
+% \social[arxiv]{<< social.arxiv >>}
 \extrainfo{\small Last updated on \today}
 
 \frenchspacing
