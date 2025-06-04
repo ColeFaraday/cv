@@ -2,9 +2,10 @@
 
 <!-- [<a href="https://scholar.google.com/citations?user={{ scholar_id }}">Google Scholar</a>: {{ scholar_stats.citations }} citations and an h-index of {{ scholar_stats.h_index}}] <br> -->
 
-See also: <a href="https://inspirehep.net/authors/{{ inspirehep_id }}">Inspire HEP</a>, <a href="https://scholar.google.com/citations?user={{ scholar_id }}">Google Scholar</a>, and <a href="https://scholar.google.com/citations?user={{ orcid }}"> ORCID </a>.
 
 {% raw %}
+See also: <a href="https://inspirehep.net/authors/{{ site.data.socials.inspirehep_id }}">Inspire HEP</a>, <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar</a>, and <a href="https://orcid.org/{{ site.data.socials.orcid_id }}"> ORCID </a>.
+
 {% assign pub_page = site.pages | where: "permalink", "/publications/" | first %}
 <div class="publications">
 
