@@ -6,6 +6,12 @@
 \setlength{\LTleft}{0pt}
 \definecolor{tab_highlight}{HTML}{f0c967}
 
+% % Page numbers
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyfoot{} % clear existing footer settings
+% \fancyfoot[R]{\thepage}
+
 \moderncvcolor{<< color >>}
 \definecolor{color2}{rgb}{<<color2>>}
 \moderncvstyle{<< style >>}
@@ -18,7 +24,46 @@
 
 
 % for the bibliography
-\usepackage[defernumbers=true,backend=biber, maxbibnames=99, giveninits=true, style=publist, url=true, doi=true, isbn=true, plauthorhandling=highlight, plsorting=ddnt, marginyear=true]{biblatex}
+\usepackage[defernumbers=true,backend=biber, maxbibnames=99, giveninits=true, style=publist, url=true, doi=true, isbn=true, plauthorhandling=highlight, plsorting=ymdDnt, marginyear=true]{biblatex}
+
+% For some reason the default sorting does not work. This correctly sorts by day as well (useful for manually ordering items in the same month).
+% See: https://tex.stackexchange.com/questions/46868/biblatex-sorting-by-date, https://github.com/plk/biblatex/issues/1292#issuecomment-1643875311
+\DeclareSortingTemplate{ymdDnt}{
+  \sort{
+    \field{presort}
+  }
+  \sort[final]{
+    \field{sortkey}
+  }
+  \sort[direction=descending]{
+    \field{sortyear}
+    \field{year}
+    \literal{9999}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{month}
+    \literal{99}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{day}
+    \literal{99}
+  }
+  \sort{
+    \field{sortname}
+    \field{author}
+    \field{sorttitle}
+    \field{title}
+  }
+  \sort{
+    \field{sorttitle}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=4,padchar=0]{volume}
+    \literal{9999}
+  }
+}
+
+
 \plauthorname[Coleridge]{Faraday}
 \addbibresource{publications/<< all_publications.file >>}
 \addbibresource{publications/<< all_publications.talk_file >>}
@@ -88,9 +133,8 @@
 % Use symbols for footnotes
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
-\usepackage{lastpage}
-\cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
-
+% \usepackage{lastpage}
+% \cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
 
 \AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}, allcolors=color1, colorlinks}}
 \name{<< name.first >>}{<< name.last >>}
@@ -111,8 +155,6 @@
 \nocite{*}
 \makecvtitle
 \vspace{-1cm}
-
-\rfoot{}
 
 << body >>
 
