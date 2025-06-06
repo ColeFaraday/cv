@@ -21,7 +21,7 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 
 
 order:
-  - [about, NONE]
+  # - [about, About]
   - [education, Education]
   # - [current_position, NONE]
   # - [positions, NONE]
@@ -47,18 +47,18 @@ about: I am Coleridge (Cole) Faraday, a PhD student in theoretical physics at th
 education:
   - school: University of Cape Town
     location: Cape Town, South Africa
-    degree: PhD. in Physics
-    dates: 2025 -- Present # May 19, 2019
-    details:
-      - "Supervisor: Assoc.\ Prof.\ W. A. Horowitz"
+    degree: PhD in Physics
+    dates: 2025--Present # May 19, 2019
+    supervisor: Assoc.\ Prof.\ W. A. Horowitz
   - school: University of Cape Town
     location: Cape Town, South Africa
     degree: MSc with Distinction in Physics
-    dates: 2023 -- 2024
+    dates: 2023--2024
     overallGPA: 90\%
-    details:
-      - "Thesis: \\textit{Energy Loss and Theoretical Uncertainties in Small Quark-Gluon Plasmas}"
-      - "Supervisor: Assoc.\ Prof.\ W. A. Horowitz"
+    thesis: Energy Loss and Theoretical Uncertainties in Small Quark-Gluon Plasmas
+    supervisor: Assoc.\ Prof.\ W.\ A.\ Horowitz
+    # supervisor_url: https://www.wahorowitz.com/
+    thesis_url: https://inspirehep.net/literature/2928736
     # majorGPA: 4.00/4.00
 # - school: Northside High School
 #   location: Roanoke, VA
@@ -68,17 +68,16 @@ education:
     degree: Honours in Physics
     dates: 2022
     details:
-      - "Thesis: \\textit{Investigating the short path length corrections to jet phenomenology in heavy ion collisions}"
-      - "Supervisor: Assoc.\ Prof.\ W. A. Horowitz"
+    thesis: Investigating the short path length corrections to jet phenomenology in heavy ion collisions
+    supervisor: Assoc.\ Prof.\ W.\ A.\ Horowitz
     overallGPA: 85\%
     # majorGPA: 4.00/4.00
   - school: University of Cape Town
     location: Cape Town, South Africa
     degree: BSc in Physics and Mathematics
     dates: 2019--2021
-    details:
-      - "Supervisor: Assoc.\ Prof.\ Heribert Weigert"
-      - "Project title: \\textit{Spontaneous symmetry breaking and the Higgs mechanism.}"
+    thesis: Spontaneous symmetry breaking and the Higgs mechanism.
+    supervisor: Assoc.\ Prof.\ Heribert Weigert
     overallGPA: 81\%
 
 # positions:
@@ -212,6 +211,7 @@ education:
 honors:
   - title: National Institute for Theoretical and Computational Sciences (NITHECS) Scholarship
     year: 2025 -- 2027
+    url: https://nithecs.ac.za/
   - title: Science Faculty PhD Fellowship
     year: 2025 -- 2027
     descr: University of Cape Town
@@ -220,6 +220,7 @@ honors:
     descr: University of Cape Town
   - title: SA-CERN Excellence Scholarship
     year: 2023 -- 2024
+    url: https://tlabs.ac.za/sa-cern/
   - title: Science Faculty Scholarship
     year: 2020
     descr: University of Cape Town
@@ -232,6 +233,7 @@ honors:
     note: No awards were given in 2020 due to the COVID-19 pandemic
   - title: UCT Mathematics Olympiad Gold Award
     year: 2015, 2016
+    url: https://www.uctmathscompetition.org.za/home
   - title: Professor John Webb Mathematics Scholarship
     year: 2014 -- 2018
     descr: Wynberg Boys' High School
@@ -334,7 +336,7 @@ teaching:
     short: UCT
     position: Tutor
   - semester: 2022
-    name: First Year Physics (with lab)
+    name: First Year Physics (with laboratory)
     short: UCT
     position: Tutor
   - semester: 2019--2022

@@ -1,0 +1,1039 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ymdDnt/global//global/global/global}
+    \entry{sps2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cape Town, South Africa}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{othertalk}
+      \field{month}{5}
+      \field{note}{The {University of Cape Town's Society of Physics Students}}
+      \field{sortyear}{2025}
+      \field{title}{Smashing Atoms to Rewind the Universe}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{Faraday:2025pto}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc4a4ad013c3e61a9dc9cc1fdc4e9215}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present suppression predictions from our pQCD-based energy loss model, which receives small system size corrections, for high-\(p_T\) \(\pi\), \(D\) and \(B\) meson \(R_{AB}\) as a function of centrality, flavor, \(\sqrt{s_{NN}}\), and \(p_T\) from large to small collision systems at RHIC and LHC. A statistical analysis is used to constrain the effective strong coupling in our model to available high-\(p_T\) suppression data from central heavy-ion collisions at RHIC and LHC, yielding good agreement with all available data. We estimate two important theoretical uncertainties in our model, stemming from: the transition between vacuum and hard thermal loop propagators in the collisional energy loss, and from the angular cutoff on the radiated gluon momentum. We find, consistently, that the extracted \(\alpha_s\) remains relatively unchanged across heavy- and light-flavor final states and across central, semi-central, and peripheral collisions. We make predictions from our large-system-constrained model for small systems and find good agreement with photon-normalized \(R^{\pi^0}_{d \text{Au}} \simeq 0.75 \) in \(0-5\%\) centrality \(d\) + Au collisions by PHENIX. However, we find strong disagreement with the measured \(R^{h^{\pm}}_{p \text{Pb}} \gtrsim 1\) in \(0-5\%\) centrality \(p\) + Pb collisions by ALICE and ATLAS; we argue that this disagreement is due, in large part, to centrality bias. We make predictions for the ratio of suppression in \({}^3\)He + Au and \(p\) + Au collisions, which may in the future be used to disentangle final- from initial-state suppression in small systems. We then compare our results to various subsets of data, which allows us to estimate the preferred: low-\(p_T\) scale at which non-perturbative processes become important, scales at which the strong coupling runs, and scale at which vacuum propagators transition to thermally modified propagators in collisional energy loss.}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Submitted to JHEP}
+      \field{month}{05}
+      \field{sortyear}{2025}
+      \field{title}{{Statistical analysis of pQCD energy loss across system size, flavor, \(\sqrt{s_{NN}}\), and \(p_T\)}}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2505.14568
+      \endverb
+    \endentry
+    \entry{Faraday:2024gzx}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc4a4ad013c3e61a9dc9cc1fdc4e9215}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present an energy loss model which includes small system size corrections to both the radiative and elastic energy loss. Our model is used to compute the nuclear modification factor \(R_{AB}\) of light and heavy flavor hadrons, averaged over realistic collision geometries for central and peripheral \(A+A\) and central \(p / d / {}^3\text{He} + A\) collisions at LHC and RHIC. We find that the predicted suppression in small systems is almost entirely due to elastic energy loss. Our results are keenly sensitive to the crossover between elastic energy loss calculated with hard thermal loop propagators and vacuum propagators, respectively, which leads to a large theoretical uncertainty. We find that the \(R_{AB}\) is largely insensitive to the form of the elastic energy loss distribution - Gaussian or Poisson - surprisingly so in small systems where the central limit theorem is inapplicable. We present an expansion of the \(R_{AB}\) in terms of the moments of the energy loss probability distribution, which allows for a rigorous understanding of the dependence of the \(R_{AB}\) on the underlying energy loss distribution.}
+      \field{eprintclass}{nucl-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. C}
+      \field{month}{05}
+      \field{number}{5}
+      \field{sortyear}{2025}
+      \field{title}{{Collisional and radiative energy loss in small systems}}
+      \field{volume}{111}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{054911}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevC.111.054911
+      \endverb
+      \verb{eprint}
+      \verb 2408.14426
+      \endverb
+    \endentry
+    \entry{qm2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Goethe University Frankfurt}%
+      }
+      \list{organization}{1}{%
+        {Quark Matter 2025}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{conferenceposter}
+      \field{month}{4}
+      \field{note}{Quark Matter 2025}
+      \field{sortyear}{2025}
+      \field{title}{Data-Driven Predictions for Small System Energy Loss}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{Faraday:2024qtl}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc4a4ad013c3e61a9dc9cc1fdc4e9215}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present quantitative predictions for the nuclear modification factor in both small and peripheral systems from a pQCD-based energy loss model that is constrained by light- and heavy-flavor suppression data from central heavy-ion collisions. We find nearly identical suppression for central \(p / d + A\) collisions as for peripheral \(A + A\) collisions, quantitatively consistent with the measured 20\% suppression of neutral pions produced in \(d + \mathrm{Au}\) collisions by PHENIX, but dramatically inconsistent with the measured 20\% enhancement of charged hadrons produced in \(p + \mathrm{Pb}\) collisions by ATLAS. We demonstrate that this equivalence of central small system suppression and peripheral large system suppression is insensitive to the underlying energy loss model.}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{month}{03}
+      \field{sortyear}{2025}
+      \field{title}{{A unified description of small, peripheral, and large system suppression data from pQCD}}
+      \field{volume}{864}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{139437}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.physletb.2025.139437
+      \endverb
+      \verb{eprint}
+      \verb 2411.09647
+      \endverb
+    \endentry
+    \entry{Faraday:2024zfj}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc4a4ad013c3e61a9dc9cc1fdc4e9215}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present suppression results for high-\(p_T\) \(D\) and \(\pi\) mesons produced in \(p / d + A\) and \(A+A\) collisions at RHIC and LHC. These results are computed using a convolved elastic and radiative energy loss model, which receives small system size corrections to both the elastic and radiative energy loss. We observe that suppression in small systems is almost entirely due to elastic energy loss; furthermore, we find that our model is acutely sensitive to the transition between hard thermal loop and vacuum propagators in the elastic energy loss. Finally, we consider the central limit theorem approximation, which is commonly used to model the elastic energy loss distribution as Gaussian.}
+      \field{eprintclass}{nucl-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{EPJ Web Conf.}
+      \field{month}{01}
+      \field{note}{Contribution to {SQM2024}}
+      \field{sortyear}{2025}
+      \field{title}{{Heavy Flavour Energy Loss in Small and Large Systems}}
+      \field{volume}{316}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{04001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/epjconf/202531604001
+      \endverb
+      \verb{eprint}
+      \verb 2409.14886
+      \endverb
+    \endentry
+    \entry{BertSAIP:2024}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=8e104cec889d710f80c2a3b6913facbb}{%
+           family={Bert},
+           familyi={B\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc4a4ad013c3e61a9dc9cc1fdc4e9215}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{63be7edd974580aad617b46939b0c00f}
+      \strng{fullhashraw}{63be7edd974580aad617b46939b0c00f}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{63be7edd974580aad617b46939b0c00f}
+      \strng{authornamehash}{535035f5e85063d18f6ad2eb3e7c14cb}
+      \strng{authorfullhash}{63be7edd974580aad617b46939b0c00f}
+      \strng{authorfullhashraw}{63be7edd974580aad617b46939b0c00f}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We extend the Djordjevic-Gyulassy-Levai-Vitev (DGLV) model, which describes jet energy dissipation in the quark-gluon plasma (QGP), a phenomenon observed in high-energy particle collisions at the LHC and RHIC. Derived from perturbative quantum chromodynamics (pQCD), the model presents complex challenges in extracting observable predictions. Our goal is to simplify the QGP’s geometry while maintaining accuracy, enabling quantitative predictions comparable to experimental data. The focus is on capturing both hydrodynamic and geometric features of the QGP, with a simplification that allows numerical models to converge efficiently.}
+      \field{booktitle}{{68th Annual Conference of the South African Institute of Physics}}
+      \field{isbn}{978-1-0370-2645-4}
+      \field{month}{12}
+      \field{note}{Contribution to {SAIP 2024}}
+      \field{sortyear}{2024}
+      \field{title}{{Modeling the Geometry of the Quark Gluon Plasma}}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{618\bibrangedash 623}
+      \range{pages}{6}
+      \verb{file}
+      \verb papers/saipBert2024.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.coleridgefaraday.com/assets/pdf/papers/saipBert2024.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.coleridgefaraday.com/assets/pdf/papers/saipBert2024.pdf
+      \endverb
+    \endentry
+    \entry{Faraday:2025nke}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a perturbative-quantum-chromodynamics-based energy loss model with small system size corrections to both radiative and elastic energy loss, incorporating realistic collision geometry, production spectra, and fragmentation. We use the Djordjevic-Gyulassy-Levai-Vitev (DGLV) radiative energy loss model and add back in previously neglected terms suppressed by system size. This small system size correction, derived by Kolbe and Horowitz, is large for high-momentum pions, raising concerns about key approximations in the radiative energy loss. We analyse the self-consistency of these approximations, finding that a particular approximation - the large formation time approximation - is not satisfied self-consistently within the model. We explore a kinematic cutoff on the transverse radiated gluon momentum, which restores the self-consistency of this approximation, but at the cost of an increased sensitivity to the exact cutoff chosen. We investigate the common application of the central limit theorem to approximate the elastic energy loss as a Gaussian distribution. Our results are insensitive to this approximation - understood not by many scatterings, but rather from an expansion of \(R_{AA}\) in terms of moments of the energy loss probability distributions. We also explore uncertainty from the crossover between hard thermal loop and vacuum propagators. We perform a one-parameter fit of the strong coupling \(\alpha_s\) to RHIC and LHC large-system data, accounting for two important theoretical uncertainties. Most uncertainties can be absorbed into a shift in \(\alpha_s\), but residual uncertainty bands remain. Differences in elastic energy loss persist even after the fit, producing distinct \(p_T\) and system size dependencies. We show model predictions for \(p / d / {}^3 \text{He} + A\) collisions, finding agreement with RHIC small system data but disagreement with LHC results.}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{month}{12}
+      \field{sortyear}{2024}
+      \field{title}{{Energy loss and theoretical uncertainties in small quark-gluon plasmas}}
+      \field{type}{Other thesis}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2506.02056
+      \endverb
+    \endentry
+    \entry{FaradaySAIP:2024}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc4a4ad013c3e61a9dc9cc1fdc4e9215}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Quark Gluon Plasma (QGP) is a novel state of matter which last occurred naturally only microseconds after the Big Bang. It is well understood that the QGP is formed in heavy-ion collisions at particle colliders such as the Relativistic Heavy-Ion Collider (RHIC) and the Large Hadron Collider (LHC); however, more recently there have been experimental signatures of QGP formation in small systems including proton heavy-ion and even proton proton collisions. We present a model for energy loss of high momentum particles based on perturbative Quantum Chromodynamics (pQCD), which includes small system size corrections to both the collisional and radiative energy loss. We make quantitative comparisons with suppression measurements of pions produced in central \(p + \mathrm{Pb}\) and Pb + Pb collisions at the LHC, and \(d + \mathrm{Au}\) and Au + Au collisions at RHIC. We discuss an uncertainty present in our model in the elastic energy loss sector, which is related to the crossover between Hard Thermal Loop (HTL) and vacuum propagators. Finally, we consider the applicability of the central limit theorem which is typically used to approximate the elastic energy loss distribution as a Gaussian distribution.}
+      \field{booktitle}{{68th Annual Conference of the South African Institute of Physics}}
+      \field{isbn}{978-1-0370-2645-4}
+      \field{month}{12}
+      \field{note}{Contribution to {SAIP 2024}}
+      \field{sortyear}{2024}
+      \field{title}{{Energy Loss in Small Quark Gluon Plasmas}}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{629\bibrangedash 634}
+      \range{pages}{6}
+      \verb{file}
+      \verb papers/saipFaraday2024.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.coleridgefaraday.com/assets/pdf/papers/saipFaraday2024.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.coleridgefaraday.com/assets/pdf/papers/saipFaraday2024.pdf
+      \endverb
+    \endentry
+    \entry{phenomenalPhysics2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cape Town, South Africa}%
+      }
+      \list{organization}{1}{%
+        {University of Cape Town}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{10}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{othertalk}
+      \field{month}{10}
+      \field{note}{Phenomenal physics (high school outreach)}
+      \field{sortyear}{2024}
+      \field{title}{Racing Balls}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{univen2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Thohoyandou, South Africa}%
+      }
+      \list{organization}{1}{%
+        {University of Venda}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{11}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{othertalk}
+      \field{month}{9}
+      \field{note}{Outreach trip to University of Venda}
+      \field{sortyear}{2024}
+      \field{title}{Introduction to Heavy-Ion Physics}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{saip2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Makhanda, South Africa}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{12}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{conferencetalk}
+      \field{month}{7}
+      \field{note}{68th Annual Conference of the South African Institute of Physics (SAIP 2024)}
+      \field{sortyear}{2024}
+      \field{title}{Energy Loss in Small Quark Gluon Plasmas}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{sqm2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Strasbourg, France}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{13}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{conferencetalk}
+      \field{month}{6}
+      \field{note}{The 21st International Conference on Strangeness in Quark Matter (SQM 2024)}
+      \field{sortyear}{2024}
+      \field{title}{Heavy Flavour Energy Loss in Small and Large Systems}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{Faraday:2023huz}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc4a4ad013c3e61a9dc9cc1fdc4e9215}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{14}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present first results for leading hadron suppression in small collision systems, from a convolved radiative and collisional pQCD energy loss model which receives a short path length correction to the radiative energy loss. We find that the short path length correction is exceptionally large for light flavor final states in both small and large collision systems, due to the disproportionate size of the correction for gluons. We examine various assumptions underlying the energy loss model through the calculation of energy loss weighted expectation values of ratios assumed small by the various assumptions. This calculation shows that the large formation time assumption, which is utilized by most contemporary energy loss models, is invalid for a large portion of the phenomenologically relevant parameter space.}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{EPJ Web Conf.}
+      \field{month}{06}
+      \field{note}{Contribution to {Quark Matter 2023}}
+      \field{sortyear}{2024}
+      \field{title}{{High-pT suppression in small systems}}
+      \field{volume}{296}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{12011}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/epjconf/202429612011
+      \endverb
+      \verb{eprint}
+      \verb 2312.10712
+      \endverb
+    \endentry
+    \entry{Faraday:2023vbo}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7c0a86c25717450324f6e8c70a5bc78f}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{9fc672489bebaef0ed77bc2e680d7d48}
+      \strng{fullhashraw}{9fc672489bebaef0ed77bc2e680d7d48}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{9fc672489bebaef0ed77bc2e680d7d48}
+      \strng{authornamehash}{9fc672489bebaef0ed77bc2e680d7d48}
+      \strng{authorfullhash}{9fc672489bebaef0ed77bc2e680d7d48}
+      \strng{authorfullhashraw}{9fc672489bebaef0ed77bc2e680d7d48}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{15}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present leading hadron suppression predictions in \(Pb+Pb\) and \(p+Pb\) collisions from a convolved radiative and collisional energy loss model in which partons propagate through a realistic background, and in which the radiative energy loss receives a short pathlength correction. We find that the short pathlength correction is small for \(D\) meson \(R_{AA}(p_T)\) in both \(Pb+Pb\) and \(p+Pb\) collisions. However the short pathlength correction leads to a surprisingly large reduction in suppression for \(\pi\) mesons in \(p+Pb\) and even \(Pb+Pb\) collisions, providing a qualitative explanation for the rapid rise in \(\pi\) meson \(R_{AA}(p_T)\) at the LHC. We find that the size of the short pathlength correction to \(R_{AA}(p_T)\) is acutely sensitive to the chosen distribution of scattering centers in the plasma. Furthermore we find that conventional elastic energy loss models, which apply the central limit theorem to the number of scatterings, dramatically overpredict suppression in \(\mathrm{p}+\mathrm{A}\) collisions, calling for short pathlength corrections to elastic energy loss.}
+      \field{eprintclass}{nucl-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{PoS}
+      \field{month}{02}
+      \field{note}{Contribution to {Hard Probes 2023}}
+      \field{sortyear}{2024}
+      \field{title}{{Energy Loss in Small Collision Systems}}
+      \field{volume}{HardProbes2023}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{131}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22323/1.438.0131
+      \endverb
+      \verb{eprint}
+      \verb 2307.08355
+      \endverb
+    \endentry
+    \entry{atlas2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cape Town, South Africa}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{16}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{othertalk}
+      \field{month}{11}
+      \field{note}{ATLAS Showcase, UCT-CERN relaunch}
+      \field{sortyear}{2023}
+      \field{title}{Quark Gluon Plasma Formation in Small Systems}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{Faraday:2023mmx}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=01d29443b02cb1a41a44e35075b8fd0b}{%
+           family={Grindrod},
+           familyi={G\bibinitperiod},
+           given={Antonia},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fc4a4ad013c3e61a9dc9cc1fdc4e9215}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{c7ebc375c45180ae24fb091084ae2a1d}
+      \strng{fullhashraw}{c7ebc375c45180ae24fb091084ae2a1d}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{c7ebc375c45180ae24fb091084ae2a1d}
+      \strng{authornamehash}{2f0177349c643a3bc0def4692d6e5ab0}
+      \strng{authorfullhash}{c7ebc375c45180ae24fb091084ae2a1d}
+      \strng{authorfullhashraw}{c7ebc375c45180ae24fb091084ae2a1d}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{17}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present the first leading hadron suppression predictions in \(\mathrm{Pb}+\mathrm{Pb}\) and \(\mathrm{p}+\mathrm{Pb}\) collisions from a convolved radiative and collisional energy loss model in which partons propagate through a realistic background and in which the inelastic energy loss receives a short pathlength correction. We find that the short pathlength correction is small for \(D\) and \(B\) meson \(R_{AA}(p_T)\) in both \(\mathrm{Pb}+\mathrm{Pb}\) and \(\mathrm{p}+\mathrm{Pb}\) collisions. However the short pathlength correction leads to a surprisingly large reduction in suppression for \(\pi\) mesons in \(\mathrm{p}+\mathrm{Pb}\) and even \(\mathrm{Pb}+\mathrm{Pb}\) collisions. We systematically check the consistency of the assumptions used in the radiative energy loss derivation - such as collinearity, softness, and large formation time - with the final numerical model. While collinearity and softness are self-consistently satisfied in the final numerics, we find that the large formation time approximation breaks down at modest to high momenta \(p_T \gtrsim 30\) GeV. We find that both the size of the small pathlength correction to \(R_{AA}(p_T)\) and the \(p_T\) at which the large formation time assumption breaks down are acutely sensitive to the chosen distribution of scattering centers in the plasma.}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J. C}
+      \field{month}{11}
+      \field{number}{11}
+      \field{sortyear}{2023}
+      \field{title}{{Inconsistencies in, and short pathlength correction to, \(R_{AA}(p_T)\) in~\(\textrm{A}+\textrm{A}\) and \(\textrm{p} + \textrm{A}\) collisions}}
+      \field{volume}{83}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{1060}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-023-12234-y
+      \endverb
+      \verb{eprint}
+      \verb 2305.13182
+      \endverb
+    \endentry
+    \entry{pgshowcase2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cape Town, South Africa}%
+      }
+      \list{organization}{1}{%
+        {University of Cape Town}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{18}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{othertalk}
+      \field{month}{10}
+      \field{note}{Postgraduate Showcase 2023}
+      \field{sortyear}{2023}
+      \field{title}{Probing the Early Universe with Extreme Temperature Physics}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{quarkmatter2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Houston, Texas, USA}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{19}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present first results for light and heavy flavor high- $p_T$ hadron suppression from a short path length corrected energy loss model in $p+p, p+A$, and $A+A$ collisions at RHIC and the LHC. We find that the short path length corrections to final state radiative energy loss for light flavor hadrons predict nontrivial enhancement such that high multiplicity $R_{p A}>1$, consistent with data. We further systematically check the consistency of the assumptions-such as collinearity, softness, and large formation time-made in the derivation of radiative energy loss, with the final numerical model. We find that the large formation time approximation breaks down at modest to high momenta $p_T \geq 30 \mathrm{GeV}$. Comparison to data at higher momenta thus requires a rederivation of GLV, DGLV, and short path length correction results; with the large formation time assumption relaxed. We also show that the usual elastic energy loss treatment vastly overpredicts the suppression in small systems; thus, small path length corrections to elastic energy loss are required for quantitative comparison to data in small systems.}
+      \field{entrysubtype}{conferencetalk}
+      \field{month}{9}
+      \field{note}{30th International Conference on Ultrarelativstic Nucleus-Nucleus Collisions (Quark Matter 2023)}
+      \field{sortyear}{2023}
+      \field{title}{High-\(p_T\) suppression in small systems}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{Faraday:2023uay}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc4a4ad013c3e61a9dc9cc1fdc4e9215}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{20}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show that an integral assumption in DGLV radiative energy loss - the large formation time assumption - is violated at high-\(p_T\) for phenomenologically relevant parameters. We further investigate the phenomenological impact of placing a new kinematic bound on the radiated gluon transverse momentum, which ensures that there are no contributions to the energy loss from regions of parameter space that violate the large formation time assumption. We find that this places a large sensitivity on the exact kinematic cutoff used, similar to the known collinear cutoff sensitivity, indicating the theoretical need for a rederivation of DGLV radiative energy with the large formation time assumption relaxed in order to make rigorous predictions. We additionally find that this large formation time cutoff dramatically reduces the size of a short pathlength correction to the DGLV radiative energy loss, which is of phenomenological interest in predicting suppression in small \(p +A\) systems. We compute the phenomenological predictions utilizing this large formation time cutoff in both \(p+A\) and \(A+A\) collisions at the LHC, in a convolved radiative and elastic energy loss model.}
+      \field{booktitle}{{67th Annual Conference of the South African Institute of Physics}}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{month}{09}
+      \field{note}{Contribution to {SAIP 2023}}
+      \field{sortyear}{2023}
+      \field{title}{{Assumption Breakdown in Radiative Energy Loss}}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2309.06246
+      \endverb
+    \endentry
+    \entry{shortpath2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Richard's Bay, South Africa}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{21}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{conferencetalk}
+      \field{month}{7}
+      \field{note}{67th Annual Conference of the South African Institute of Physics (SAIP 2023)}
+      \field{sortyear}{2023}
+      \field{title}{Short path length corrections to {pQCD} phenomenological energy loss models in a {QGP}}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

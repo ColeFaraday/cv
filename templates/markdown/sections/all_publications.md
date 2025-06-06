@@ -10,26 +10,22 @@ See also: <a href="https://inspirehep.net/authors/{{ site.data.socials.inspirehe
 <div class="publications">
 
 {%- for section in pub_page.sections %}
-  <a id="{{section.text}}"></a>
-  <p class="bibtitle">{{section.text}}</p>
-  {%- for y in pub_page.years %}
+  <h3 id="{{section.text}}">{{section.text}}</h3>
 
     {%- comment -%}  Count bibliography in actual section and year {%- endcomment -%}
     {%- capture citecount -%}
-    {%- bibliography_count -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] -%}
+    {%- bibliography_count -f {{site.scholar.bibliography}} -q {{section.bibquery}} -%}
     {%- endcapture -%}
 
     {%- comment -%} If exist bibliography in actual section and year, print {%- endcomment -%}
     {%- if citecount !="0" %}
 
-      <h2 class="year">{{y}}</h2>
-      {% bibliography -f {{site.scholar.bibliography}} -q {{section.bibquery}}[year={{y}}] %}
+      {% bibliography -f {{site.scholar.bibliography}} -q {{section.bibquery}} %}
 
     {%- endif -%}
 
-  {%- endfor %}
-
 {%- endfor %}
+
 
 </div>
 
