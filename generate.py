@@ -463,21 +463,23 @@ def check_author_urls(author_urls_dict):
             print(f"+ URL for {author} ({url}) returned status code {r.status_code}")
 
 class RenderContext(object):
-    BUILD_DIR = 'build'
+    # BUILD_DIR = 'build'  <-- Remove or comment out this line
     TEMPLATES_DIR = 'templates'
     SECTIONS_DIR = 'sections'
     DEFAULT_SECTION = 'items'
     BASE_FILE_NAME = 'cv'
 
-    def __init__(self, context_name, file_ending, jinja_options, replacements):
+    def __init__(self, context_name, file_ending, jinja_options, replacements, outdir='build'):
         self._context_name = context_name
         self._file_ending = file_ending
         self._replacements = replacements
+        self._outdir = outdir # Store the output directory
 
         context_templates_dir = os.path.join(self.TEMPLATES_DIR, context_name)
 
+        # Use self._outdir here instead of self.BUILD_DIR
         self._output_file = os.path.join(
-            self.BUILD_DIR, self.BASE_FILE_NAME + self._file_ending)
+            self._outdir, self.BASE_FILE_NAME + self._file_ending)
         self._base_template = self.BASE_FILE_NAME + self._file_ending
 
         self._context_type_name = context_name + 'type'
@@ -532,7 +534,7 @@ class RenderContext(object):
             section_content = None if section_tag == "NEWPAGE" else yaml_data[section_tag]
             if section_tag == 'about':
                 if self._file_ending == '.tex':
-                    continue
+                    section_data['items'] = section_content
                 section_template_name = "section" + self._file_ending
                 section_data['data'] = section_content
             elif section_tag == 'news':
@@ -554,7 +556,7 @@ class RenderContext(object):
                     self.SECTIONS_DIR, 'positions' + self._file_ending)
             elif section_tag in ['coursework', 'education', 'honors',
                                  'positions', 'research', 'skills', 'service',
-                                 'teaching', 'talks', 'advising']:
+                                 'teaching', 'talks', 'advising', 'about']:
                 if yaml_data["talks_from_bib"] and section_tag == "talks":
                     section_data['items'] = [ 
                                              dict(name="Conference Talks", details = "\leavevmode\printbibliography[subtype=conferencetalk, heading=none, resetnumbers=true]"),
@@ -603,59 +605,6 @@ class RenderContext(object):
             output_data = output_data.encode('utf-8')
             out.write(output_data)
 
-
-LATEX_CONTEXT = RenderContext(
-    'latex',
-    '.tex',
-    dict(
-        block_start_string='~<',
-        block_end_string='>~',
-        variable_start_string='<<',
-        variable_end_string='>>',
-        comment_start_string='<#',
-        comment_end_string='#>',
-        trim_blocks=True,
-        lstrip_blocks=True
-    ),
-    []
-)
-
-MARKDOWN_CONTEXT = RenderContext(
-    'markdown',
-    '.md',
-    dict(
-        trim_blocks=True,
-        lstrip_blocks=True
-    ),
-    [
-        (r'\\\\\[[^\]]*]', '\n'),  # newlines
-        # (r'~', ' '),  # spaces
-        (r'\.~', '. '),  # spaces
-        (r'\\ ', ' '),  # spaces
-        (r'\\&', '&'),  # unescape &
-        (r'\\_', '_'),  # unescape _
-        (r'\\\$', r'\$'),  # unescape $
-        (r'\\%', '%'),  # unescape %
-        (r'\\textbf{(.*?)}', r'<b>\1</b>'),  # bold text
-        (r'\{ *\\bf *(.*?)\}', r'<b>\1</b>'),
-        (r'\\textit{(.*?)}', r'<i>\1</i>'),  # italic text
-        (r'\{ *\\it *(.*?)\}', r'<i>\1</i>'),
-        (r'\\LaTeX', 'LaTeX'),  # \LaTeX to boring old LaTeX
-        (r'\\TeX', 'TeX'),  # \TeX to boring old TeX
-        (' --- ', '&nbsp;-&nbsp;'),  # em dash
-        (' -- ', '&nbsp;-&nbsp;'),  # en dash
-        ('---', '-'),  # em dash
-        ('--', '-'),  # en dash
-        (r'``([^\']*)\'\'', r'"\1"'),  # quotes
-        (r'\\url{([^}]*)}', r'[\1](\1)'),  # urls
-        # (r'\\href{([^}]*)}{([^}]*)}', r'[\2](\1)'),  # urls
-        (r'\\href{([^}]*)}{([^}]*)}', r'<a href="\1" target="_blank">\2</a>'),  # urls
-        (r'\{([^}]*)\}', r'\1'),  # Brackets.
-        (r'\$\\varheart\$', r'<i class="fa fas fa-heart"></i>'),  # Heart.
-    ]
-)
-
-
 def process_resume(context, yaml_data, preview):
     rendered_resume = context.render_resume(yaml_data)
     if preview:
@@ -670,6 +619,8 @@ def main():
     parser.add_argument('yamls', metavar='YAML_FILE', nargs='+',
                         help='The YAML files that contain the resume/cv'
                         'details, in order of increasing precedence')
+    parser.add_argument('--outdir', type=str, default='build',
+                        help='Output directory for generated files (default: build)')
     parser.add_argument('-p', '--preview', action='store_true',
                         help='prints generated content to stdout instead of writing to file')
     group = parser.add_mutually_exclusive_group()
@@ -684,14 +635,67 @@ def main():
         with open(yaml_file) as f:
             yaml_data.update(yaml.safe_load(f))
 
+    # Pass the outdir to the RenderContext constructor
+    # We will need to update the RenderContext __init__ method next
+    latex_context = RenderContext(
+        'latex',
+        '.tex',
+        dict(
+            block_start_string='~<',
+            block_end_string='>~',
+            variable_start_string='<<',
+            variable_end_string='>>',
+            comment_start_string='<#',
+            comment_end_string='#>',
+            trim_blocks=True,
+            lstrip_blocks=True
+        ),
+        [],
+        args.outdir # Pass the output directory here
+    )
+
+    markdown_context = RenderContext(
+        'markdown',
+        '.md',
+        dict(
+            trim_blocks=True,
+            lstrip_blocks=True
+        ),
+        [
+            (r'\\\\\[[^\]]*]', '\n'),
+            (r'\.~', '. '),
+            (r'\\ ', ' '),
+            (r'\\&', '&'),
+            (r'\\_', '_'),
+            (r'\\\$', r'\$'),
+            (r'\\%', '%'),
+            (r'\\textbf{(.*?)}', r'<b>\1</b>'),
+            (r'\{ *\\bf *(.*?)\}', r'<b>\1</b>'),
+            (r'\\textit{(.*?)}', r'<i>\1</i>'),
+            (r'\{ *\\it *(.*?)\}', r'<i>\1</i>'),
+            (r'\\LaTeX', 'LaTeX'),
+            (r'\\TeX', 'TeX'),
+            (' --- ', '&nbsp;-&nbsp;'),
+            (' -- ', '&nbsp;-&nbsp;'),
+            ('---', '-'),
+            ('--', '-'),
+            (r'``([^\']*)\'\'', r'"\1"'),
+            (r'\\url{([^}]*)}', r'[\1](\1)'),
+            (r'\\href{([^}]*)}{([^}]*)}', r'<a href="\1" target="_blank">\2</a>'),
+            (r'\{([^}]*)\}', r'\1'),
+            (r'\$\\varheart\$', r'<i class="fa fas fa-heart"></i>'),
+        ],
+        args.outdir # Pass the output directory here
+    )
+
     if args.latex or args.markdown:
         if args.latex:
-            process_resume(LATEX_CONTEXT, yaml_data, args.preview)
+            process_resume(latex_context, yaml_data, args.preview)
         elif args.markdown:
-            process_resume(MARKDOWN_CONTEXT, yaml_data, args.preview)
+            process_resume(markdown_context, yaml_data, args.preview)
     else:
-        process_resume(LATEX_CONTEXT, yaml_data, args.preview)
-        process_resume(MARKDOWN_CONTEXT, yaml_data, args.preview)
+        process_resume(latex_context, yaml_data, args.preview)
+        process_resume(markdown_context, yaml_data, args.preview)
 
 
 if __name__ == "__main__":

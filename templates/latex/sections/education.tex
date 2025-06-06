@@ -12,11 +12,27 @@
     ~< endif >~
     \hfill << school.dates >> \par
   ~< endif >~
+  \begin{itemize}
+  ~< if school.thesis >~
+    ~< if school.thesis_url >~
+      \item Thesis: \href{<< school.thesis_url >>}{\textit{<< school.thesis >>}} \par
+    ~< else >~
+      \item Supervisor: \textit{<< school.thesis >>}
+    ~< endif>~
+  ~< endif >~
+  ~< if school.supervisor >~
+    ~< if school.supervisor_url >~
+      \item Thesis: \href{<< school.supervisor_url >>}{<< school.supervisor >>} \par
+    ~< else >~
+      \item Supervisor: << school.supervisor >>
+    ~< endif>~
+  ~<endif>~
   ~< if school.details >~
     ~< for detail in school.details ->~
-        <<detail>> \par
+        \item <<detail>>
     ~< endfor >~
   ~< endif >~
+  \end{itemize}
   \vspace{3mm}
 ~< endfor >~
 % \end{itemize}
