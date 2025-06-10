@@ -463,7 +463,6 @@ def check_author_urls(author_urls_dict):
             print(f"+ URL for {author} ({url}) returned status code {r.status_code}")
 
 class RenderContext(object):
-    # BUILD_DIR = 'build'  <-- Remove or comment out this line
     TEMPLATES_DIR = 'templates'
     SECTIONS_DIR = 'sections'
     DEFAULT_SECTION = 'items'
@@ -532,12 +531,7 @@ class RenderContext(object):
 
             section_data = {'name': section_title}
             section_content = None if section_tag == "NEWPAGE" else yaml_data[section_tag]
-            if section_tag == 'about':
-                if self._file_ending == '.tex':
-                    section_data['items'] = section_content
-                section_template_name = "section" + self._file_ending
-                section_data['data'] = section_content
-            elif section_tag == 'news':
+            if section_tag == 'news':
                 if self._file_ending == '.tex':
                     continue
                 section_template_name = os.path.join(self.SECTIONS_DIR, 'news.md')

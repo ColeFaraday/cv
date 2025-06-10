@@ -126,6 +126,8 @@
 
 \usepackage{mathabx} % For \bigstar
 
+\usepackage{needspace} % for keeping nice spacing (i.e. not starting heading at bottom of page)
+
 % Use the new X logo (aka a sans-serif blackboard X)
 \usepackage{bbm}
 \renewcommand*{\twittersocialsymbol}{$\mathbbmss{X}$~}
@@ -149,6 +151,10 @@
 % \social[github]{<<social.github>>}
 % \social[arxiv]{<< social.arxiv >>}
 \extrainfo{\small Last updated on \today}
+
+~< if photo >~
+\photo[84pt][0pt]{<< photo >>}
+~< endif >~
 
 \frenchspacing
 

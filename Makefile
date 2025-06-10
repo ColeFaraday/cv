@@ -86,4 +86,5 @@ fetch-papers:
 	@echo "Papers fetched."
 
 clean:
+	rm -rf `biber --cache`
 	rm -rf $(BUILD_DIR)

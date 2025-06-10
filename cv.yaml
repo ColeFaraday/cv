@@ -15,7 +15,7 @@ social:
   orcid: 0000-0003-3063-148X
 
 # LaTeX formatting
-style: banking # casual, classic, oldstyle, or banking
+style: classic # casual, classic, oldstyle, or banking
 color: blue # blue, orange, green, red, purple, grey and black
 color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 

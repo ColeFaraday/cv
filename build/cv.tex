@@ -14,7 +14,7 @@
 
 \moderncvcolor{blue}
 \definecolor{color2}{rgb}{0.25,0.25,0.25}
-\moderncvstyle{banking}
+\moderncvstyle{classic}
 \colorlet{firstnamecolor}{color1}
 
 \usepackage[top=1in, bottom=1in, left=.7in, right=.7in]{geometry}
@@ -126,6 +126,8 @@
 
 \usepackage{mathabx} % For \bigstar
 
+\usepackage{needspace} % for keeping nice spacing (i.e. not starting heading at bottom of page)
+
 % Use the new X logo (aka a sans-serif blackboard X)
 \usepackage{bbm}
 \renewcommand*{\twittersocialsymbol}{$\mathbbmss{X}$~}
@@ -149,6 +151,7 @@
 % \social[github]{}
 % \social[arxiv]{faraday\_c\_1}
 \extrainfo{\small Last updated on \today}
+
 
 \frenchspacing
 
@@ -241,10 +244,13 @@
 
 % [{'name': 'Journal Articles', 'details': '\\leavevmode\\printbibliography[type=article, heading=none, resetnumbers=true]'}, {'name': 'Conference Papers', 'details': '\\leavevmode\\printbibliography[type=inproceedings, heading=none, resetnumbers=true]'}, {'name': 'Theses', 'details': '\\leavevmode\\printbibliography[type=thesis, heading=none, resetnumbers=true]'}]
 
+\needspace{5\baselineskip}
 	\subsection{Journal Articles}
 	\leavevmode\printbibliography[type=article, heading=none, resetnumbers=true]
+\needspace{5\baselineskip}
 	\subsection{Conference Papers}
 	\leavevmode\printbibliography[type=inproceedings, heading=none, resetnumbers=true]
+\needspace{5\baselineskip}
 	\subsection{Theses}
 	\leavevmode\printbibliography[type=thesis, heading=none, resetnumbers=true]
 
@@ -254,10 +260,13 @@ Slides for my major presentations are available
 \href{https:www.coleridgefaraday.com/talks/}{here}
 under a CC-BY license.
 
+	\needspace{5\baselineskip}
 	\subsection{Conference Talks}
 	\leavevmode\printbibliography[subtype=conferencetalk, heading=none, resetnumbers=true]
+	\needspace{5\baselineskip}
 	\subsection{Conference Posters}
 	\leavevmode\printbibliography[subtype=conferenceposter, heading=none, resetnumbers=true]
+	\needspace{5\baselineskip}
 	\subsection{Outreach Talks}
 	\leavevmode\printbibliography[subtype=othertalk, heading=none, resetnumbers=true]
 

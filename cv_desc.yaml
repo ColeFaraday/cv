@@ -1,5 +1,6 @@
 order:
   - [about, About]
+  - [education, Education]
   # - [current_position, NONE]
   # - [positions, NONE]
   - [honors, Awards]
@@ -10,6 +11,7 @@ order:
   - [service, Academic Service]
   - [teaching, Teaching]
   - [advising, Mentorship roles]
-  - [education, Education]
   # - [skills, Skills]
   # - [NEWPAGE, NONE]
+
+photo: images/coleWithPosterSmall.jpeg

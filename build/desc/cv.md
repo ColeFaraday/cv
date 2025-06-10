@@ -17,6 +17,103 @@ toc:
 I am Coleridge (Cole) Faraday, a PhD student in theoretical physics at the University of Cape Town (UCT), South Africa, supervised by Assoc. Prof. <a href="https://www.wahorowitz.com/" target="_blank">W. A. Horowitz</a>. My research is within high-energy nuclear theory, focusing on the quark-gluon plasma (QGP)—a novel state of matter that is formed at extremely high temperatures and densities. I am particularly interested in making connection with experimental observations at RHIC and the LHC, understanding whether QGP is formed in <a href="https://inspirehep.net/literature/2848284" target="_blank">small collision systems</a>, and using energy loss to <a href="https://arxiv.org/abs/2505.14568" target="_blank">quantify properties of this novel fluid</a>.
 
 
+## Education
+
+<table class="table table-hover">
+  <tr>
+    <td>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <div>
+          <strong>PhD in Physics</strong>, <i>University of Cape Town</i>
+        </div>
+        <div class="cvdate" style="white-space: nowrap;">2025-Present</div>
+      </div>
+
+			<ul>
+
+        <li> <p style="margin: 0 0 0.2em 0;">
+            Supervisor: Assoc. Prof. W. A. Horowitz
+        </p>
+        </li>
+
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <div>
+          <strong>MSc with Distinction in Physics</strong>, <i>University of Cape Town</i>
+            (90%)
+        </div>
+        <div class="cvdate" style="white-space: nowrap;">2023-2024</div>
+      </div>
+
+			<ul>
+        <li> <p style="margin: 0.2em 0 0 0;">
+            Thesis: <a href="https://inspirehep.net/literature/2928736"><em>Energy Loss and Theoretical Uncertainties in Small Quark-Gluon Plasmas</em></a><br>
+        </p>
+        </li>
+
+        <li> <p style="margin: 0 0 0.2em 0;">
+            Supervisor: Assoc. Prof. W. A. Horowitz
+        </p>
+        </li>
+
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <div>
+          <strong>Honours in Physics</strong>, <i>University of Cape Town</i>
+            (85%)
+        </div>
+        <div class="cvdate" style="white-space: nowrap;">2022</div>
+      </div>
+
+			<ul>
+        <li> <p style="margin: 0.2em 0 0 0;">
+            Thesis: <em>Investigating the short path length corrections to jet phenomenology in heavy ion collisions</em><br>
+        </p>
+        </li>
+
+        <li> <p style="margin: 0 0 0.2em 0;">
+            Supervisor: Assoc. Prof. W. A. Horowitz
+        </p>
+        </li>
+
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <div>
+          <strong>BSc in Physics and Mathematics</strong>, <i>University of Cape Town</i>
+            (81%)
+        </div>
+        <div class="cvdate" style="white-space: nowrap;">2019-2021</div>
+      </div>
+
+			<ul>
+        <li> <p style="margin: 0.2em 0 0 0;">
+            Thesis: <em>Spontaneous symmetry breaking and the Higgs mechanism.</em><br>
+        </p>
+        </li>
+
+        <li> <p style="margin: 0 0 0.2em 0;">
+            Supervisor: Assoc. Prof. Heribert Weigert
+        </p>
+        </li>
+
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
 ## Awards
 <table class="table table-hover">
 <tr>
@@ -217,101 +314,4 @@ Slides for my presentations are linked below under a CC-BY license.
         Tiaan van der Merwe (Mentoring and helping with honours project on phenomenological energy loss at UCT)
   </td>
 </tr>
-</table>
-
-
-## Education
-
-<table class="table table-hover">
-  <tr>
-    <td>
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
-        <div>
-          <strong>PhD in Physics</strong>, <i>University of Cape Town</i>
-        </div>
-        <div class="cvdate" style="white-space: nowrap;">2025-Present</div>
-      </div>
-
-			<ul>
-
-        <li> <p style="margin: 0 0 0.2em 0;">
-            Supervisor: Assoc. Prof. W. A. Horowitz
-        </p>
-        </li>
-
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
-        <div>
-          <strong>MSc with Distinction in Physics</strong>, <i>University of Cape Town</i>
-            (90%)
-        </div>
-        <div class="cvdate" style="white-space: nowrap;">2023-2024</div>
-      </div>
-
-			<ul>
-        <li> <p style="margin: 0.2em 0 0 0;">
-            Thesis: <a href="https://inspirehep.net/literature/2928736"><em>Energy Loss and Theoretical Uncertainties in Small Quark-Gluon Plasmas</em></a><br>
-        </p>
-        </li>
-
-        <li> <p style="margin: 0 0 0.2em 0;">
-            Supervisor: Assoc. Prof. W. A. Horowitz
-        </p>
-        </li>
-
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
-        <div>
-          <strong>Honours in Physics</strong>, <i>University of Cape Town</i>
-            (85%)
-        </div>
-        <div class="cvdate" style="white-space: nowrap;">2022</div>
-      </div>
-
-			<ul>
-        <li> <p style="margin: 0.2em 0 0 0;">
-            Thesis: <em>Investigating the short path length corrections to jet phenomenology in heavy ion collisions</em><br>
-        </p>
-        </li>
-
-        <li> <p style="margin: 0 0 0.2em 0;">
-            Supervisor: Assoc. Prof. W. A. Horowitz
-        </p>
-        </li>
-
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
-        <div>
-          <strong>BSc in Physics and Mathematics</strong>, <i>University of Cape Town</i>
-            (81%)
-        </div>
-        <div class="cvdate" style="white-space: nowrap;">2019-2021</div>
-      </div>
-
-			<ul>
-        <li> <p style="margin: 0.2em 0 0 0;">
-            Thesis: <em>Spontaneous symmetry breaking and the Higgs mechanism.</em><br>
-        </p>
-        </li>
-
-        <li> <p style="margin: 0 0 0.2em 0;">
-            Supervisor: Assoc. Prof. Heribert Weigert
-        </p>
-        </li>
-
-      </ul>
-    </td>
-  </tr>
 </table>
