@@ -249,9 +249,9 @@ Slides for my presentations are linked below under a CC-BY license.
 <table class="table table-hover">
 <tr>
   <td style='padding-right:0;'>
-  <span class='cvdate'>2025&nbsp;-&nbsp;Present</span>
       Postgraduate representative for Physics Department, University of Cape Town
   </td>
+  <td class='col-md-3' style='text-align:right; padding-left:0;'>2025&nbsp;-&nbsp;Present</td>
 </tr>
 </table>
 
@@ -300,14 +300,14 @@ Slides for my presentations are linked below under a CC-BY license.
 <table class="table table-hover">
 <tr>
   <td style='padding-right:0;'>
-    <span class='cvdate'>2023&nbsp;-&nbsp;Present</span>
         Ben Bert (Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT)
   </td>
+  <td class='col-md-3' style='text-align:right; padding-left:0;'>2023&nbsp;-&nbsp;Present</td>
 </tr>
 <tr>
   <td style='padding-right:0;'>
-    <span class='cvdate'>2024&nbsp;-&nbsp;Present</span>
         Tiaan van der Merwe (Mentoring and helping with honours project on phenomenological energy loss at UCT)
   </td>
+  <td class='col-md-3' style='text-align:right; padding-left:0;'>2024&nbsp;-&nbsp;Present</td>
 </tr>
 </table>
