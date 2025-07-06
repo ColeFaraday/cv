@@ -1,5 +1,15 @@
 # Makefile to build PDF and Markdown CVs from YAML.
 
+# Use bash as the shell and evaluate pyenv commands first
+SHELL := /bin/sh
+.SHELLFLAGS := c
+
+# Set up pyenv for every recipe
+PYENV_SETUP = \
+	eval "$$(pyenv init --path)"; \
+	eval "$$(pyenv init -)"; \
+	eval "$$(pyenv virtualenv-init -)";
+
 WEBSITE_DIR=${HOME}/Documents/Work/Obsidian/documents/projects/website/colefaraday.github.io
 WEBSITE_PDF=$(WEBSITE_DIR)/assets/pdf/cv.pdf
 WEBSITE_PAPERS=$(WEBSITE_DIR)/_bibliography/papers.bib
@@ -29,15 +39,15 @@ VARIANTS := $(patsubst cv_%.yaml,%,$(filter cv_%.yaml,$(YAML_FILES)))
 all: $(PDF) $(MD)
 
 $(BUILD_DIR):
-	mkdir -p $@
+	$(PYENV_SETUP) mkdir -p $@
 
 # Default rule: use cv.yaml [+ optional cv.hidden.yaml]
 $(TEX) $(MD): generate.py $(TEMPLATES) $(YAML_FILES) $(PAPERS) $(TALKS) | $(BUILD_DIR)
-	./generate.py cv.yaml $(if $(wildcard cv.hidden.yaml),cv.hidden.yaml) --outdir=$(BUILD_DIR)
+	$(PYENV_SETUP) ./generate.py cv.yaml $(if $(wildcard cv.hidden.yaml),cv.hidden.yaml) --outdir=$(BUILD_DIR)
 
 $(PDF): $(TEX)
-	latexmk -gg -pdflatex=lualatex -pdf -cd- -jobname=$(BUILD_DIR)/cv $(BUILD_DIR)/cv
-	latexmk -c -cd $(BUILD_DIR)/cv
+	$(PYENV_SETUP) latexmk -gg -pdflatex=lualatex -pdf -cd- -jobname=$(BUILD_DIR)/cv $(BUILD_DIR)/cv
+	$(PYENV_SETUP) latexmk -c -cd $(BUILD_DIR)/cv
 
 ## Variant Rules
 
@@ -45,46 +55,43 @@ $(PDF): $(TEX)
 $(VARIANTS):
 	$(MAKE) $(BUILD_DIR)/$@/cv.pdf $(BUILD_DIR)/$@/cv.md
 
-# This is a pattern rule for generating the .tex and .md for any variant
-# Target: build/variant_name/cv.tex and build/variant_name/cv.md
+# Pattern rule for generating .tex and .md for any variant
 $(BUILD_DIR)/%/cv.tex $(BUILD_DIR)/%/cv.md: generate.py $(TEMPLATES) $(YAML_FILES) $(PAPERS) $(TALKS) | $(BUILD_DIR)
-	mkdir -p $(BUILD_DIR)/$*
-	./generate.py cv.yaml cv_$*.yaml --outdir=$(BUILD_DIR)/$*
+	$(PYENV_SETUP) mkdir -p $(BUILD_DIR)/$*
+	$(PYENV_SETUP) ./generate.py cv.yaml cv_$*.yaml --outdir=$(BUILD_DIR)/$*
 
-# This is a pattern rule for building the PDF for any variant
-# Target: build/variant_name/cv.pdf
+# Pattern rule for building PDF for any variant
 $(BUILD_DIR)/%/cv.pdf: $(BUILD_DIR)/%/cv.tex
-	latexmk -gg -pdflatex=lualatex -pdf -cd- -jobname=cv -outdir=$(BUILD_DIR)/$* $(BUILD_DIR)/$*/cv
-	# Clean up also uses -outdir to point to the correct temporary files
-	latexmk -c -cd $(BUILD_DIR)/$*/cv
+	$(PYENV_SETUP) latexmk -gg -pdflatex=lualatex -pdf -cd- -jobname=cv -outdir=$(BUILD_DIR)/$* $(BUILD_DIR)/$*/cv
+	$(PYENV_SETUP) latexmk -c -cd $(BUILD_DIR)/$*/cv
 
 ## Other Rules
 
 public: all
 
 viewpdf: $(PDF)
-	xdg-open $(PDF)
+	$(PYENV_SETUP) xdg-open $(PDF)
 
 stage: $(PDF) $(MD)
-	git -C $(WEBSITE_DIR) checkout $(WEBSITE_PDF) $(WEBSITE_MD) $(WEBSITE_PAPERS) $(WEBSITE_TALKS)
-	git -C $(WEBSITE_DIR) pull --rebase
-	cp $(PDF) $(WEBSITE_PDF)
-	cp $(MD) $(WEBSITE_MD)
-	cp $(PAPERS) $(WEBSITE_PAPERS)
-	cp $(TALKS) $(WEBSITE_TALKS)
+	$(PYENV_SETUP) git -C $(WEBSITE_DIR) checkout $(WEBSITE_PDF) $(WEBSITE_MD) $(WEBSITE_PAPERS) $(WEBSITE_TALKS)
+	$(PYENV_SETUP) git -C $(WEBSITE_DIR) pull --rebase
+	$(PYENV_SETUP) cp $(PDF) $(WEBSITE_PDF)
+	$(PYENV_SETUP) cp $(MD) $(WEBSITE_MD)
+	$(PYENV_SETUP) cp $(PAPERS) $(WEBSITE_PAPERS)
+	$(PYENV_SETUP) cp $(TALKS) $(WEBSITE_TALKS)
 
 jekyll: stage
-	cd $(WEBSITE_DIR) && bundle exec jekyll serve
+	$(PYENV_SETUP) cd $(WEBSITE_DIR) && bundle exec jekyll serve
 
 push: stage
-	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF) $(WEBSITE_MD)
-	git -C $(WEBSITE_DIR) commit -m "Update CV."
-	git -C $(WEBSITE_DIR) push
+	$(PYENV_SETUP) git -C $(WEBSITE_DIR) add $(WEBSITE_PDF) $(WEBSITE_MD)
+	$(PYENV_SETUP) git -C $(WEBSITE_DIR) commit -m "Update CV."
+	$(PYENV_SETUP) git -C $(WEBSITE_DIR) push
 
 fetch-papers:
-	cd publications && fetch_inspire_bib_from_search "a Faraday, c" papers
+	$(PYENV_SETUP) cd publications && fetch_inspire_bib_from_search "a Faraday, c" papers
 	@echo "Papers fetched."
 
 clean:
-	rm -rf `biber --cache`
-	rm -rf $(BUILD_DIR)
+	$(PYENV_SETUP) rm -rf `biber --cache`
+	$(PYENV_SETUP) rm -rf $(BUILD_DIR)

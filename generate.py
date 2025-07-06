@@ -555,6 +555,7 @@ class RenderContext(object):
                     section_data['items'] = [ 
                                              dict(name="Conference Talks", details = "\leavevmode\printbibliography[subtype=conferencetalk, heading=none, resetnumbers=true]"),
                                              dict(name="Conference Posters", details = "\leavevmode\printbibliography[subtype=conferenceposter, heading=none, resetnumbers=true]"),
+                                             dict(name="Invited Talks", details = "\leavevmode\printbibliography[subtype=invited, heading=none, resetnumbers=true]"),
                                              dict(name="Outreach Talks", details = "\leavevmode\printbibliography[subtype=othertalk, heading=none, resetnumbers=true]")
                                              ]
                 else:
