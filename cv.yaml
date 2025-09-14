@@ -209,6 +209,8 @@ education:
 #       #   and hard links.
 
 honors:
+  - title: Best PhD Oral Presentation in Theoretical and Computational Physics at SAIP2025 Annual Conference
+    year: 2025
   - title: National Institute for Theoretical and Computational Sciences (NITHECS) Scholarship
     year: 2025 -- 2027
     url: https://nithecs.ac.za/
@@ -274,10 +276,14 @@ advising:
   - year: 2024 -- Present
     name: Tiaan van der Merwe
     details: "Mentoring and helping with honours project on phenomenological energy loss at UCT"
+  - year: 2025 -- Present
+    name: Jack Brand
+    details: "Mentoring and helping with honours project on phenomenological energy loss at UCT"
 
 service:
   reviewing:
     - "Proceedings of the 68th Annual Conference of the South African Institute of Physics"
+    - "Proceedings of the 69th Annual Conference of the South African Institute of Physics"
 
   main:
     - details: Postgraduate representative for Physics Department, University of Cape Town
@@ -319,7 +325,7 @@ teaching:
     name: Quantum Field Theory II
     short: \href{https://nithecs.ac.za/south-african-theory-and-computational-school/}{SATACS}
     position: Tutor
-  - semester: 2024
+  - semester: 2024,2025
     name: Quantum Field Theory I
     short: \href{https://nithecs.ac.za/south-african-theory-and-computational-school/}{SATACS}
     position: Tutor
@@ -331,7 +337,7 @@ teaching:
     name: Honours Quantum Mechanics
     short: UCT
     position: Tutor
-  - semester: 2023
+  - semester: 2023,2025
     name: Third Year Statistical Physics
     short: UCT
     position: Tutor

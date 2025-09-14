@@ -73,8 +73,8 @@ viewpdf: $(PDF)
 	$(PYENV_SETUP) xdg-open $(PDF)
 
 stage: $(PDF) $(MD)
-	$(PYENV_SETUP) git -C $(WEBSITE_DIR) checkout $(WEBSITE_PDF) $(WEBSITE_MD) $(WEBSITE_PAPERS) $(WEBSITE_TALKS)
-	$(PYENV_SETUP) git -C $(WEBSITE_DIR) pull --rebase
+	## $(PYENV_SETUP) git -C $(WEBSITE_DIR) checkout $(WEBSITE_PDF) $(WEBSITE_MD) $(WEBSITE_PAPERS) $(WEBSITE_TALKS)
+	## $(PYENV_SETUP) git -C $(WEBSITE_DIR) pull --rebase
 	$(PYENV_SETUP) cp $(PDF) $(WEBSITE_PDF)
 	$(PYENV_SETUP) cp $(MD) $(WEBSITE_MD)
 	$(PYENV_SETUP) cp $(PAPERS) $(WEBSITE_PAPERS)

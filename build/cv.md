@@ -114,6 +114,15 @@ toc:
 <table class="table table-hover">
 <tr>
   <td>
+  <div style='float: right'>2025</div>
+  <div>
+        Best PhD Oral Presentation in Theoretical and Computational Physics at SAIP2025 Annual Conference
+  </div>
+  </td>
+  <!-- <td class='col-md-2' style='text-align:right;'>2025</td> -->
+</tr>
+<tr>
+  <td>
   <div style='float: right'>2025&nbsp;-&nbsp;2027</div>
   <div>
         <a href="https://nithecs.ac.za/">National Institute for Theoretical and Computational Sciences (NITHECS) Scholarship</a>
@@ -260,6 +269,9 @@ Slides for my presentations are linked below under a CC-BY license.
 <tr>
   <td style='padding-right:0;'>Proceedings of the 68th Annual Conference of the South African Institute of Physics</td>
 </tr>
+<tr>
+  <td style='padding-right:0;'>Proceedings of the 69th Annual Conference of the South African Institute of Physics</td>
+</tr>
 </table>
 
 
@@ -271,7 +283,7 @@ Slides for my presentations are linked below under a CC-BY license.
 </tr>
 <tr>
   <td style='padding-right:0'><strong>Quantum Field Theory I</strong> (<a href="https://nithecs.ac.za/south-african-theory-and-computational-school/" target="_blank">SATACS</a>), Tutor</td>
-  <td class='col-md-2' style='text-align:right; padding-left:0;'>2024</td>
+  <td class='col-md-2' style='text-align:right; padding-left:0;'>2024,2025</td>
 </tr>
 <tr>
   <td style='padding-right:0'><strong>Honours Statistical Physics</strong> (UCT), Tutor</td>
@@ -283,7 +295,7 @@ Slides for my presentations are linked below under a CC-BY license.
 </tr>
 <tr>
   <td style='padding-right:0'><strong>Third Year Statistical Physics</strong> (UCT), Tutor</td>
-  <td class='col-md-2' style='text-align:right; padding-left:0;'>2023</td>
+  <td class='col-md-2' style='text-align:right; padding-left:0;'>2023,2025</td>
 </tr>
 <tr>
   <td style='padding-right:0'><strong>First Year Physics (with laboratory)</strong> (UCT), Tutor</td>
@@ -309,5 +321,11 @@ Slides for my presentations are linked below under a CC-BY license.
         Tiaan van der Merwe (Mentoring and helping with honours project on phenomenological energy loss at UCT)
   </td>
   <td class='col-md-3' style='text-align:right; padding-left:0;'>2024&nbsp;-&nbsp;Present</td>
+</tr>
+<tr>
+  <td style='padding-right:0;'>
+        Jack Brand (Mentoring and helping with honours project on phenomenological energy loss at UCT)
+  </td>
+  <td class='col-md-3' style='text-align:right; padding-left:0;'>2025&nbsp;-&nbsp;Present</td>
 </tr>
 </table>
