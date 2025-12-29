@@ -1,8 +1,8 @@
 % biblatex-publist auxiliary file: count of items for reverse numbering and stats
-\csdef {bpl@items}{4}\csdef {bpl@secitems:0}{4}
-\csdef {bpl@items}{10}\csdef {bpl@secitems:0}{10}
-\csdef {bpl@items}{11}\csdef {bpl@secitems:0}{11}
-\csdef {bpl@items}{17}\csdef {bpl@secitems:0}{17}
-\csdef {bpl@items}{18}\csdef {bpl@secitems:0}{18}
-\csdef {bpl@items}{19}\csdef {bpl@secitems:0}{19}
-\csdef {bpl@items}{25}\csdef {bpl@secitems:0}{25}
+\csdef {bpl@items}{5}\csdef {bpl@secitems:0}{5}
+\csdef {bpl@items}{13}\csdef {bpl@secitems:0}{13}
+\csdef {bpl@items}{14}\csdef {bpl@secitems:0}{14}
+\csdef {bpl@items}{21}\csdef {bpl@secitems:0}{21}
+\csdef {bpl@items}{22}\csdef {bpl@secitems:0}{22}
+\csdef {bpl@items}{23}\csdef {bpl@secitems:0}{23}
+\csdef {bpl@items}{30}\csdef {bpl@secitems:0}{30}

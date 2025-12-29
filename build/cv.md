@@ -267,6 +267,12 @@ Slides for my presentations are linked below under a CC-BY license.
 ### Reviewing
 <table class="table table-hover">
 <tr>
+  <td style='padding-right:0;'>SCIENCE CHINA Physics, Mechanics & Astronomy</td>
+</tr>
+<tr>
+  <td style='padding-right:0;'>Annals of Physics</td>
+</tr>
+<tr>
   <td style='padding-right:0;'>Proceedings of the 68th Annual Conference of the South African Institute of Physics</td>
 </tr>
 <tr>

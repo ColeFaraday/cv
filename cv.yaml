@@ -282,6 +282,8 @@ advising:
 
 service:
   reviewing:
+    - "SCIENCE CHINA Physics, Mechanics \\& Astronomy"
+    - "Annals of Physics"
     - "Proceedings of the 68th Annual Conference of the South African Institute of Physics"
     - "Proceedings of the 69th Annual Conference of the South African Institute of Physics"
 
