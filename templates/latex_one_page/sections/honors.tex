@@ -1,0 +1,8 @@
+~< extends "section.tex" >~
+
+~< block body >~
+~< for award in items >~
+  ~< if award.url >~\href{<<award.url>>}{<<award.title>>}~< else >~<< award.title >>~< endif >~
+  \hfill << award['year'] >> \\
+~< endfor >~
+~< endblock body >~

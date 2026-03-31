@@ -1,0 +1,98 @@
+# One-page CV configuration
+# Overlays on top of cv.yaml
+
+latex_template_dir: latex_one_page
+
+photo: images/coleWithPosterSmall.jpeg
+
+order:
+  - [tagline, NONE]
+  - [education, Education]
+  - [honors, Selected Awards]
+  - [pub_summary, Publications]
+  - [talks_summary, Talks and Presentations]
+  - [service_summary, Academic Service]
+  - [teaching_summary, Teaching]
+  - [mentorship_summary, Mentorship]
+  - [skills_summary, Technical Skills]
+
+# One-sentence description for non-academic audience
+tagline: >-
+  PhD student in theoretical physics at the University of Cape Town, researching the quark-gluon plasma---a
+  novel state of matter formed microseconds after the Big Bang---through connections between theory and experimental observations from high-energy heavy-ion collisions.
+
+# Compact education: just degree, dates, GPA
+education:
+  - school: University of Cape Town
+    degree: PhD in Physics
+    dates: 2025--Present
+  - school: University of Cape Town
+    degree: MSc with Distinction in Physics
+    dates: 2023--2024
+    overallGPA: 90\%
+  - school: University of Cape Town
+    degree: Honours in Physics
+    dates: 2022
+    overallGPA: 85\%
+  - school: University of Cape Town
+    degree: BSc in Physics and Mathematics
+    dates: 2019--2021
+    overallGPA: 81\%
+
+# Selected awards only
+honors:
+  - title: Best PhD Oral Presentation in Theoretical and Computational Physics at SAIP2025
+    year: 2025
+  - title: National Institute for Theoretical and Computational Sciences (NITHECS) Scholarship
+    year: 2025 -- 2027
+    url: https://nithecs.ac.za/
+  - title: Science Faculty PhD Fellowship
+    year: 2025 -- 2027
+  - title: SA-CERN Excellence Scholarship
+    year: 2023 -- 2024
+    url: https://tlabs.ac.za/sa-cern/
+  - title: Manuel \& Luby Washkansky Scholarship
+    year: 2023
+  - title: Dean's Merit List
+    year: 2019, 2021
+
+# Publication summary: stats computed from bib
+pub_summary:
+  file: papers.bib
+  talk_file: talks.bib
+  inspire_id: "2661508"
+  author_last_name: Faraday
+  highlighted:
+    - "Faraday:2025pto"
+
+skills_summary:
+  - title: Languages, Tools, and Technical Skills
+    details: Python, Mathematica, C++, Linux shell, \LaTeX, Git, Vim, High-performance cluster computing
+
+# Selected talk venues + summary
+talks_summary:
+  talk_file: talks.bib
+  selected_venues:
+    - "Invited Talk at 60th Rencontres de Moriond 2026: QCD and High Energy Interactions (La Thuile, Italy)"
+    - "Parallel Talk at Quark Matter 2023 (Houston, USA) and Poster at Quark Matter 2025 (Frankfurt, Germany)"
+    - "Parallel Talk at Hard Probes 2023 (Aschaffenburg, Germany)"
+    - "Parallel Talk at SQM 2024 (Strasbourg, France)"
+    - "Invited Talk at Light Ion Collisions at the LHC 2025 (CERN, Geneva)"
+    - "Invited Talk at Precision Frontier of QCD Matter 2025 (Wuhan, China)"
+    - "Parallel Talks at SAIP Annual Conference (2023, 2024, 2025, South Africa)"
+
+# Summarized service
+service_summary:
+  - Postgraduate representative for Physics Department, UCT (2025--Present)
+  - "Reviewer: SCIENCE CHINA Physics, Annals of Physics, SAIP Proceedings"
+  - ESKOM Science Expo 2025 Project Judge
+
+# Teaching summary
+teaching_summary:
+  - "\\textbf{Quantum Mechanics and Quantum Field Theory}, Tutor, 2023--2025"
+  - "\\textbf{Honours and Third Year Statistical Physics} (UCT), Tutor, 2023--2025"
+  - "\\textbf{First Year Physics} (UCT), Tutor, 2022"
+
+# Mentorship summary
+mentorship_summary: >-
+  Mentoring three students on honours and MSc research projects in phenomenological energy loss at UCT (2023--Present).

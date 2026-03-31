@@ -1,0 +1,26 @@
+~< extends "section.tex" >~
+
+~< block body >~
+<< num_fa_journal >> first-author peer-reviewed journal articles in << fa_journal_list >>;
+~< if num_coauthor_journal > 0 >~
+<< num_coauthor_journal >> coauthored peer-reviewed journal articles in << coauthor_journal_list >>;
+~< endif >~
+<< num_proceedings >> peer-reviewed conference proceedings;
+~< if num_preprints > 0 >~
+<< num_preprints >> soon-to-be published preprints (on arXiv);
+~< endif >~
+<< total_citations >> total citations.  For a full list of publications, see \href{https://inspirehep.net/authors/<< inspire_id >>}{INSPIRE-HEP}.
+
+~< if highlighted_pubs >~
+\smallskip
+\textbf{Selected publication:}
+\begin{itemize}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  ~< for pub in highlighted_pubs >~
+  \item << pub >>
+  ~< endfor >~
+\end{itemize}
+~< endif >~
+
+~< endblock body >~

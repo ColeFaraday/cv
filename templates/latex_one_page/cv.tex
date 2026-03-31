@@ -1,0 +1,41 @@
+\documentclass[10pt,letter,sans]{moderncv}
+
+\usepackage{anyfontsize}
+\usepackage{needspace}
+
+\moderncvcolor{<< color >>}
+\definecolor{color2}{rgb}{<<color2>>}
+\moderncvstyle{<< style >>}
+\colorlet{firstnamecolor}{color1}
+
+\usepackage[top=0.6in, bottom=0.6in, left=0.6in, right=0.6in]{geometry}
+
+% Use the new X logo
+\usepackage{bbm}
+\renewcommand*{\twittersocialsymbol}{$\mathbbmss{X}$~}
+
+% Use symbols for footnotes
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}, allcolors=color1, colorlinks}}
+\name{<< name.first >>}{<< name.last >>}
+\email{<< email >>}
+\homepage{<< url >>}
+\social[orcid]{<< social.orcid >>}
+\social[inspire]{<< social.inspirehep_id >>}
+\social[arxiv]{<< social.arxiv >>}
+\extrainfo{\small Last updated on \today}
+
+~< if photo >~
+\photo[80pt][0pt]{<< photo >>}
+~< endif >~
+
+\frenchspacing
+
+\begin{document}
+\makecvtitle
+\vspace{-0.8cm}
+
+<< body >>
+
+\end{document}

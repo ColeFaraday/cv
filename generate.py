@@ -401,6 +401,127 @@ def get_pub_summary(bibtex_file):
         summary += f'{venue} ({count} papers)'
     return summary
 
+
+def get_pub_summary_stats(context, config):
+    """Compute publication summary statistics from the bib file."""
+    with open(os.path.join('publications', config['file']), 'r') as f:
+        pubs = BibTexParser(f.read(), bc.author).get_entry_list()
+
+    num_fa_journal = 0
+    num_coauthor_journal = 0
+    num_proceedings = 0
+    num_total = 0
+    total_citations = 0
+    fa_journals = set()
+    coauthor_journals = set()
+    highlighted_pubs = []
+    highlight_keys = config.get('highlighted', [])
+    author_last_name = config.get('author_last_name', '')
+
+    for pub in pubs:
+        entry_type = pub.get('ENTRYTYPE', '').lower()
+        # Skip theses
+        if entry_type in ('mastersthesis', 'phdthesis'):
+            continue
+        num_total += 1
+
+        # Determine if first author
+        is_first_author = False
+        if author_last_name and isinstance(pub.get('author', []), list) and len(pub['author']) > 0:
+            first_author = pub['author'][0]
+            if first_author.startswith(author_last_name + ','):
+                is_first_author = True
+
+        if entry_type == 'article' and 'journal' in pub:
+            if is_first_author:
+                num_fa_journal += 1
+                fa_journals.add(pub['journal'])
+            else:
+                num_coauthor_journal += 1
+                coauthor_journals.add(pub['journal'])
+        elif entry_type == 'inproceedings':
+            num_proceedings += 1
+
+        citation_count = pub.get('citation_count', '0')
+        try:
+            total_citations += int(citation_count)
+        except (ValueError, TypeError):
+            pass
+        if pub.get('ID', '') in highlight_keys:
+            highlighted_pubs.append(pub)
+
+    num_preprints = num_total - num_fa_journal - num_coauthor_journal - num_proceedings
+    fa_journal_list = ', '.join(sorted(fa_journals))
+    coauthor_journal_list = ', '.join(sorted(coauthor_journals))
+
+    # Format highlighted publications for LaTeX
+    formatted_highlights = []
+    for pub in highlighted_pubs:
+        # Format authors
+        authors = pub.get('author', [])
+        if isinstance(authors, list):
+            author_parts = []
+            for a in authors:
+                parts = a.split(', ')
+                if len(parts) == 2:
+                    author_parts.append(parts[1] + ' ' + parts[0])
+                else:
+                    author_parts.append(a)
+            if len(author_parts) > 1:
+                author_parts[-1] = 'and ' + author_parts[-1]
+            author_str = ', '.join(author_parts) if len(author_parts) > 2 else ' '.join(author_parts)
+        else:
+            author_str = str(authors)
+        title = pub.get('title', '').replace('\n', ' ')
+        journal = pub.get('journal', '')
+        volume = pub.get('volume', '')
+        pages = pub.get('pages', '')
+        year = pub.get('year', '')
+        doi = pub.get('doi', '')
+        ref_str = f'{journal}'
+        if volume:
+            ref_str += f' {volume}'
+        if pages:
+            ref_str += f' ({year}) {pages}'
+        if doi:
+            entry = fr'\textbf{{{author_str}}}, \textit{{{title}}}, \href{{https://doi.org/{doi}}}{{{ref_str}}}'
+        else:
+            entry = fr'\textbf{{{author_str}}}, \textit{{{title}}}, {ref_str}'
+        formatted_highlights.append(context.make_replacements(entry))
+
+    inspire_id = config.get('inspire_id', '')
+
+    # Allow manual overrides from YAML
+    stats = {
+        'num_fa_journal': config.get('num_fa_journal', num_fa_journal),
+        'num_coauthor_journal': config.get('num_coauthor_journal', num_coauthor_journal),
+        'num_proceedings': config.get('num_proceedings', num_proceedings),
+        'num_preprints': config.get('num_preprints', num_preprints),
+        'total_citations': config.get('total_citations', total_citations),
+        'fa_journal_list': config.get('fa_journal_list', fa_journal_list),
+        'coauthor_journal_list': config.get('coauthor_journal_list', coauthor_journal_list),
+        'highlighted_pubs': formatted_highlights,
+        'inspire_id': inspire_id,
+    }
+    return stats
+
+
+def get_talks_summary_stats(config):
+    """Compute talk summary statistics from the talks bib file."""
+    with open(os.path.join('publications', config['talk_file']), 'r') as f:
+        talks = BibTexParser(f.read()).get_entry_list()
+
+    num_outreach = sum(1 for t in talks if t.get('entrysubtype', '') == 'othertalk')
+    num_conference_institutional = len(talks) - num_outreach
+
+    stats = {
+        'num_talks': config.get('num_talks', num_conference_institutional),
+        'num_outreach': config.get('num_outreach', num_outreach),
+        'selected_venues': config.get('selected_venues', []),
+    }
+    return stats
+
+
 def truncate_to_k(num):
     num_k = math.trunc(num/100)/10
     num_k = f'{num_k:.1f}'
@@ -574,6 +695,24 @@ class RenderContext(object):
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
                 # check_author_urls(section_content['author_urls'])
+            elif section_tag == 'pub_summary':
+                stats = get_pub_summary_stats(self, section_content)
+                section_data.update(stats)
+                section_template_name = os.path.join(
+                    self.SECTIONS_DIR, 'pub_summary' + self._file_ending)
+            elif section_tag == 'talks_summary':
+                stats = get_talks_summary_stats(section_content)
+                section_data.update(stats)
+                section_template_name = os.path.join(
+                    self.SECTIONS_DIR, 'talks_summary' + self._file_ending)
+            elif section_tag == 'service_summary':
+                section_data['items'] = section_content
+                section_template_name = os.path.join(
+                    self.SECTIONS_DIR, 'service_summary' + self._file_ending)
+            elif section_tag in ['teaching_summary', 'mentorship_summary', 'tagline', 'skills_summary']:
+                section_data['items'] = section_content
+                section_template_name = os.path.join(
+                    self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag == 'NEWPAGE':
                 pass
             else:
@@ -630,10 +769,13 @@ def main():
         with open(yaml_file) as f:
             yaml_data.update(yaml.safe_load(f))
 
+    # Allow YAML to override the LaTeX template directory (e.g., 'latex_one_page')
+    latex_template_dir = yaml_data.get('latex_template_dir', 'latex')
+
     # Pass the outdir to the RenderContext constructor
     # We will need to update the RenderContext __init__ method next
     latex_context = RenderContext(
-        'latex',
+        latex_template_dir,
         '.tex',
         dict(
             block_start_string='~<',
@@ -690,7 +832,9 @@ def main():
             process_resume(markdown_context, yaml_data, args.preview)
     else:
         process_resume(latex_context, yaml_data, args.preview)
-        process_resume(markdown_context, yaml_data, args.preview)
+        # Only generate markdown if using the default latex template dir
+        if latex_template_dir == 'latex':
+            process_resume(markdown_context, yaml_data, args.preview)
 
 
 if __name__ == "__main__":

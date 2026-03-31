@@ -1,0 +1,13 @@
+~< extends "section.tex" >~
+
+~< block body >~
+<< num_talks >> talks and posters at conferences and institutions, and << num_outreach >> public outreach talks.
+Selected venues:
+\begin{itemize}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  ~< for venue in selected_venues >~
+  \item << venue >>
+  ~< endfor >~
+\end{itemize}
+~< endblock body >~

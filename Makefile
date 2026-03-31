@@ -25,6 +25,11 @@ TEX := $(BUILD_DIR)/cv.tex
 PDF := $(BUILD_DIR)/cv.pdf
 MD  := $(BUILD_DIR)/cv.md
 
+# One-page CV
+ONE_PAGE_BUILD_DIR := build_one_page
+ONE_PAGE_TEX := $(ONE_PAGE_BUILD_DIR)/cv.tex
+ONE_PAGE_PDF := $(ONE_PAGE_BUILD_DIR)/cv.pdf
+
 PAPERS := publications/papers.bib
 TALKS  := publications/talks.bib
 
@@ -32,11 +37,12 @@ YAML_FILES := $(wildcard cv*.yaml)
 
 # List of all possible variant names (e.g., 'internal', 'academic')
 # This assumes your variant YAMLs are named cv_VARIANT.yaml
-VARIANTS := $(patsubst cv_%.yaml,%,$(filter cv_%.yaml,$(YAML_FILES)))
+# Exclude one_page since it has its own dedicated rules
+VARIANTS := $(filter-out one_page,$(patsubst cv_%.yaml,%,$(filter cv_%.yaml,$(YAML_FILES))))
 
-.PHONY: all public stage jekyll push clean fetch-papers viewpdf $(VARIANTS)
+.PHONY: all public stage jekyll push clean fetch-papers viewpdf one_page $(VARIANTS)
 
-all: $(PDF) $(MD)
+all: $(PDF) $(MD) one_page
 
 $(BUILD_DIR):
 	$(PYENV_SETUP) mkdir -p $@
@@ -48,6 +54,21 @@ $(TEX) $(MD): generate.py $(TEMPLATES) $(YAML_FILES) $(PAPERS) $(TALKS) | $(BUIL
 $(PDF): $(TEX)
 	$(PYENV_SETUP) latexmk -gg -pdflatex=lualatex -pdf -cd- -jobname=$(BUILD_DIR)/cv $(BUILD_DIR)/cv
 	$(PYENV_SETUP) latexmk -c -cd $(BUILD_DIR)/cv
+
+## One-page CV Rules
+
+.PHONY: one_page
+one_page: $(ONE_PAGE_PDF)
+
+$(ONE_PAGE_BUILD_DIR):
+	$(PYENV_SETUP) mkdir -p $@
+
+$(ONE_PAGE_TEX): generate.py $(TEMPLATES) $(YAML_FILES) $(PAPERS) $(TALKS) | $(ONE_PAGE_BUILD_DIR)
+	$(PYENV_SETUP) ./generate.py cv.yaml cv_one_page.yaml --outdir=$(ONE_PAGE_BUILD_DIR)
+
+$(ONE_PAGE_PDF): $(ONE_PAGE_TEX)
+	$(PYENV_SETUP) latexmk -gg -pdflatex=lualatex -pdf -cd- -jobname=$(ONE_PAGE_BUILD_DIR)/cv $(ONE_PAGE_BUILD_DIR)/cv
+	$(PYENV_SETUP) latexmk -c -cd $(ONE_PAGE_BUILD_DIR)/cv
 
 ## Variant Rules
 
@@ -95,3 +116,4 @@ fetch-papers:
 clean:
 	$(PYENV_SETUP) rm -rf `biber --cache`
 	$(PYENV_SETUP) rm -rf $(BUILD_DIR)
+	$(PYENV_SETUP) rm -rf $(ONE_PAGE_BUILD_DIR)

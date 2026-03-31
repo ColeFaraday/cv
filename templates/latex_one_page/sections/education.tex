@@ -1,0 +1,13 @@
+~< extends "section.tex" >~
+
+~< block body >~
+~< for school in items >~
+  ~< if school.degree >~
+    \textbf{<< school.degree >>}, \emph{<< school.school >>}%
+    ~< if school.overallGPA >~
+        ~(<< school.overallGPA >>)%
+    ~< endif >~
+    \hfill << school.dates >> \\
+  ~< endif >~
+~< endfor >~
+~< endblock body >~

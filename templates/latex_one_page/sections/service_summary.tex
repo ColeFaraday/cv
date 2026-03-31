@@ -1,0 +1,11 @@
+~< extends "section.tex" >~
+
+~< block body >~
+\begin{itemize}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  ~< for item in items >~
+  \item << item >>
+  ~< endfor >~
+\end{itemize}
+~< endblock body >~
