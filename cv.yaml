@@ -286,6 +286,7 @@ service:
     - "Annals of Physics"
     - "Proceedings of the 68th Annual Conference of the South African Institute of Physics"
     - "Proceedings of the 69th Annual Conference of the South African Institute of Physics"
+    - "ESKOM Science Expo 2025 Project Judge"
 
   main:
     - details: Postgraduate representative for Physics Department, University of Cape Town

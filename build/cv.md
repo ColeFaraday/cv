@@ -278,6 +278,9 @@ Slides for my presentations are linked below under a CC-BY license.
 <tr>
   <td style='padding-right:0;'>Proceedings of the 69th Annual Conference of the South African Institute of Physics</td>
 </tr>
+<tr>
+  <td style='padding-right:0;'>ESKOM Science Expo 2025 Project Judge</td>
+</tr>
 </table>
 
 

@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{ymdDnt/global//global/global}
-    \entry{BertSAIP:2025}{inproceedings}{}
+  \datalist[entry]{ymdDnt/global//global/global/global}
+    \entry{Bert:2026uxa}{article}{}{}
       \name{author}{3}{}{%
         {{hash=8e104cec889d710f80c2a3b6913facbb}{%
            family={Bert},
@@ -44,14 +44,110 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{63be7edd974580aad617b46939b0c00f}
+      \strng{fullhashraw}{63be7edd974580aad617b46939b0c00f}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{63be7edd974580aad617b46939b0c00f}
       \strng{authornamehash}{535035f5e85063d18f6ad2eb3e7c14cb}
       \strng{authorfullhash}{63be7edd974580aad617b46939b0c00f}
+      \strng{authorfullhashraw}{63be7edd974580aad617b46939b0c00f}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
       \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present high-$p_T$\(R_{AB}\) and \(v_2\) from a perturbative quantum chromodynamics-based energy loss model that includes event-by-event hydrodynamic evolution of the medium and small system size corrections to the energy loss. The model is calibrated on, and describes well, large system \(R_{AA}\) and \(v_2\) experimental data. The extrapolation of our model to \(\mathrm{Ne}+\mathrm{Ne}\) and \(\mathrm{O}+\mathrm{O}\) agrees quantitatively with recent experimental measurements of \(R_{AA}\). Surprisingly, at high-\(p_T\) our energy loss model predicts \(v_2\approx0\) for all symmetric and asymmetric small systems when extracted using either hard-hard or hard-soft two-particle correlations. We argue that all energy loss models will in general predict \(v_2\approx0\) when extracted using hard-soft correlations, which is the usual experimental method for measuring anisotropy in hadronic collisions, due to a generic geometric decorrelation between the hard and soft sector participant planes.}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{month}{03}
+      \field{sortyear}{2026}
+      \field{title}{Energy loss predicts no \(v_2\) in small systems}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2603.21861
+      \endverb
+    \endentry
+    \entry{moriond2026}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {La Thuile, Italy}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{conferencetalk}
+      \field{month}{03}
+      \field{note}{60th Rencontres de Moriond 2026: QCD & High Energy Interactions}
+      \field{sortyear}{2026}
+      \field{title}{Light-Ion Suppression from pQCD Energy Loss with Small-System Corrections}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
+    \entry{BertSAIP:2025}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=8e104cec889d710f80c2a3b6913facbb}{%
+           family={Bert},
+           familyi={B\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc4a4ad013c3e61a9dc9cc1fdc4e9215}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{63be7edd974580aad617b46939b0c00f}
+      \strng{fullhashraw}{63be7edd974580aad617b46939b0c00f}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{63be7edd974580aad617b46939b0c00f}
+      \strng{authornamehash}{535035f5e85063d18f6ad2eb3e7c14cb}
+      \strng{authorfullhash}{63be7edd974580aad617b46939b0c00f}
+      \strng{authorfullhashraw}{63be7edd974580aad617b46939b0c00f}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{3}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -71,7 +167,7 @@
       \verb papers/saipBert2025.pdf
       \endverb
     \endentry
-    \entry{lightIons2025}{misc}{}
+    \entry{lightIons2025}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -89,14 +185,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{2}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{4}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -109,7 +208,7 @@
       \field{year}{2025}
       \true{nocite}
     \endentry
-    \entry{Faraday:2025prr}{article}{}
+    \entry{Faraday:2025prr}{article}{}{}
       \name{author}{5}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -144,14 +243,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{1667c7a37f47d84086b189d0b3ec0636}
+      \strng{fullhashraw}{1667c7a37f47d84086b189d0b3ec0636}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{1667c7a37f47d84086b189d0b3ec0636}
       \strng{authornamehash}{2f0177349c643a3bc0def4692d6e5ab0}
       \strng{authorfullhash}{1667c7a37f47d84086b189d0b3ec0636}
+      \strng{authorfullhashraw}{1667c7a37f47d84086b189d0b3ec0636}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{3}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{5}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -168,7 +270,7 @@
       \verb 2512.17832
       \endverb
     \endentry
-    \entry{FaradaySAIP:2025}{inproceedings}{}
+    \entry{FaradaySAIP:2025}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -188,14 +290,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{4}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{6}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -215,7 +320,7 @@
       \verb papers/saipFaraday2025.pdf
       \endverb
     \endentry
-    \entry{Faraday:2025pto}{article}{}
+    \entry{Faraday:2025pto}{article}{}{}
       \name{author}{2}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -235,14 +340,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{5}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{7}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -266,7 +374,47 @@
       \verb 2505.14568
       \endverb
     \endentry
-    \entry{precision2025}{misc}{}
+    \entry{3MT2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
+           family={Faraday},
+           familyi={F\bibinitperiod},
+           given={Coleridge},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=b59c67bf196a4758191e42f76670ceba}{%
+           family={1111},
+           familyi={1\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cape Town, South Africa}%
+      }
+      \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{othertalk}
+      \field{month}{09}
+      \field{sortyear}{2025}
+      \field{title}{What Happens When Protons Melt?}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{precision2025}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -284,14 +432,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{6}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{9}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -304,7 +455,7 @@
       \field{year}{2025}
       \true{nocite}
     \endentry
-    \entry{bartosch2025}{misc}{}
+    \entry{bartosch2025}{misc}{}{}
       \name{author}{3}{}{%
         {{hash=d5cd4d4f6d501822214cf3a3a6ff6e2a}{%
            family={Brand},
@@ -332,14 +483,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{9340103ee1f8874cc662f13822066434}
+      \strng{fullhashraw}{9340103ee1f8874cc662f13822066434}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{9340103ee1f8874cc662f13822066434}
       \strng{authornamehash}{d5059ef719a49091155d44a4fd70c3a0}
       \strng{authorfullhash}{9340103ee1f8874cc662f13822066434}
+      \strng{authorfullhashraw}{9340103ee1f8874cc662f13822066434}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{7}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{10}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -352,7 +506,7 @@
       \field{year}{2025}
       \true{nocite}
     \endentry
-    \entry{saip2025}{misc}{}
+    \entry{saip2025}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -370,14 +524,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{8}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{11}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -390,7 +547,7 @@
       \field{year}{2025}
       \true{nocite}
     \endentry
-    \entry{nmsu2025}{misc}{}
+    \entry{nmsu2025}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -408,14 +565,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{9}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{12}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -428,7 +588,7 @@
       \field{year}{2025}
       \true{nocite}
     \endentry
-    \entry{sps2025}{misc}{}
+    \entry{sps2025}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -446,14 +606,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{10}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{13}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -466,7 +629,7 @@
       \field{year}{2025}
       \true{nocite}
     \endentry
-    \entry{Faraday:2024gzx}{article}{}
+    \entry{Faraday:2024gzx}{article}{}{}
       \name{author}{2}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -486,14 +649,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{11}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{14}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -518,7 +684,7 @@
       \verb 2408.14426
       \endverb
     \endentry
-    \entry{qm2025}{misc}{}
+    \entry{qm2025}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -539,14 +705,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{12}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{15}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -559,7 +728,7 @@
       \field{year}{2025}
       \true{nocite}
     \endentry
-    \entry{Faraday:2024qtl}{article}{}
+    \entry{Faraday:2024qtl}{article}{}{}
       \name{author}{2}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -579,14 +748,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{13}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{16}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -610,7 +782,7 @@
       \verb 2411.09647
       \endverb
     \endentry
-    \entry{Faraday:2024zfj}{inproceedings}{}
+    \entry{Faraday:2024zfj}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -630,14 +802,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{14}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{17}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -662,7 +837,7 @@
       \verb 2409.14886
       \endverb
     \endentry
-    \entry{BertSAIP:2024}{inproceedings}{}
+    \entry{BertSAIP:2024}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=8e104cec889d710f80c2a3b6913facbb}{%
            family={Bert},
@@ -687,14 +862,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{63be7edd974580aad617b46939b0c00f}
+      \strng{fullhashraw}{63be7edd974580aad617b46939b0c00f}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{63be7edd974580aad617b46939b0c00f}
       \strng{authornamehash}{535035f5e85063d18f6ad2eb3e7c14cb}
       \strng{authorfullhash}{63be7edd974580aad617b46939b0c00f}
+      \strng{authorfullhashraw}{63be7edd974580aad617b46939b0c00f}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{15}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{18}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -714,7 +892,7 @@
       \verb papers/saipBert2024.pdf
       \endverb
     \endentry
-    \entry{Faraday:2025nke}{thesis}{}
+    \entry{Faraday:2025nke}{thesis}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -729,14 +907,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{16}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{19}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -754,7 +935,7 @@
       \verb 2506.02056
       \endverb
     \endentry
-    \entry{FaradaySAIP:2024}{inproceedings}{}
+    \entry{FaradaySAIP:2024}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -774,14 +955,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{17}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{20}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -801,7 +985,7 @@
       \verb papers/saipFaraday2024.pdf
       \endverb
     \endentry
-    \entry{phenomenalPhysics2024}{misc}{}
+    \entry{phenomenalPhysics2024}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -822,14 +1006,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{18}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{21}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -842,7 +1029,7 @@
       \field{year}{2024}
       \true{nocite}
     \endentry
-    \entry{univen2024}{misc}{}
+    \entry{univen2024}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -863,14 +1050,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{19}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{22}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -883,7 +1073,7 @@
       \field{year}{2024}
       \true{nocite}
     \endentry
-    \entry{saip2024}{misc}{}
+    \entry{saip2024}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -901,14 +1091,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{20}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{23}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -921,7 +1114,7 @@
       \field{year}{2024}
       \true{nocite}
     \endentry
-    \entry{sqm2024}{misc}{}
+    \entry{sqm2024}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -939,14 +1132,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{21}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{24}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -959,7 +1155,7 @@
       \field{year}{2024}
       \true{nocite}
     \endentry
-    \entry{Faraday:2023huz}{inproceedings}{}
+    \entry{Faraday:2023huz}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -979,14 +1175,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{22}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{25}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -1011,7 +1210,7 @@
       \verb 2312.10712
       \endverb
     \endentry
-    \entry{Faraday:2023vbo}{inproceedings}{}
+    \entry{Faraday:2023vbo}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -1031,14 +1230,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{9fc672489bebaef0ed77bc2e680d7d48}
+      \strng{fullhashraw}{9fc672489bebaef0ed77bc2e680d7d48}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{9fc672489bebaef0ed77bc2e680d7d48}
       \strng{authornamehash}{9fc672489bebaef0ed77bc2e680d7d48}
       \strng{authorfullhash}{9fc672489bebaef0ed77bc2e680d7d48}
+      \strng{authorfullhashraw}{9fc672489bebaef0ed77bc2e680d7d48}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{23}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{26}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -1063,7 +1265,7 @@
       \verb 2307.08355
       \endverb
     \endentry
-    \entry{atlas2023}{misc}{}
+    \entry{atlas2023}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -1081,14 +1283,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{24}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{27}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -1101,7 +1306,7 @@
       \field{year}{2023}
       \true{nocite}
     \endentry
-    \entry{Faraday:2023mmx}{article}{}
+    \entry{Faraday:2023mmx}{article}{}{}
       \name{author}{3}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -1126,14 +1331,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{c7ebc375c45180ae24fb091084ae2a1d}
+      \strng{fullhashraw}{c7ebc375c45180ae24fb091084ae2a1d}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{c7ebc375c45180ae24fb091084ae2a1d}
       \strng{authornamehash}{2f0177349c643a3bc0def4692d6e5ab0}
       \strng{authorfullhash}{c7ebc375c45180ae24fb091084ae2a1d}
+      \strng{authorfullhashraw}{c7ebc375c45180ae24fb091084ae2a1d}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{25}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{28}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -1158,7 +1366,7 @@
       \verb 2305.13182
       \endverb
     \endentry
-    \entry{pgshowcase2023}{misc}{}
+    \entry{pgshowcase2023}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -1179,14 +1387,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{26}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{29}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -1199,7 +1410,7 @@
       \field{year}{2023}
       \true{nocite}
     \endentry
-    \entry{quarkmatter2023}{misc}{}
+    \entry{quarkmatter2023}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -1217,14 +1428,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{27}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{30}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -1238,7 +1452,7 @@
       \field{year}{2023}
       \true{nocite}
     \endentry
-    \entry{Faraday:2023uay}{inproceedings}{}
+    \entry{Faraday:2023uay}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -1258,14 +1472,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{fullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authornamehash}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{authorfullhash}{286b2ecb4a41c9e0997d8f9fb123cec9}
+      \strng{authorfullhashraw}{286b2ecb4a41c9e0997d8f9fb123cec9}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{28}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{31}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
@@ -1284,7 +1501,7 @@
       \verb 2309.06246
       \endverb
     \endentry
-    \entry{shortpath2023}{misc}{}
+    \entry{shortpath2023}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b1e594dd1574be85a0c54590a3d257d3}{%
            family={Faraday},
@@ -1302,14 +1519,17 @@
       }
       \strng{namehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{fullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{fullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{bibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{authorbibnamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authornamehash}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{authorfullhash}{b1e594dd1574be85a0c54590a3d257d3}
+      \strng{authorfullhashraw}{b1e594dd1574be85a0c54590a3d257d3}
       \strng{shortauthorbibnamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthornamehash}{b59c67bf196a4758191e42f76670ceba}
       \strng{shortauthorfullhash}{b59c67bf196a4758191e42f76670ceba}
-      \field{extraname}{29}
+      \strng{shortauthorfullhashraw}{b59c67bf196a4758191e42f76670ceba}
+      \field{extraname}{32}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{shortauthor}
