@@ -674,9 +674,10 @@ class RenderContext(object):
                                  'teaching', 'talks', 'advising', 'about']:
                 if yaml_data["talks_from_bib"] and section_tag == "talks":
                     section_data['items'] = [ 
+                                             dict(name="Seminars", details = "\leavevmode\printbibliography[subtype=seminar, heading=none, resetnumbers=true]"),
+                                             dict(name="Invited Talks", details = "\leavevmode\printbibliography[subtype=invited, heading=none, resetnumbers=true]"),
                                              dict(name="Conference Talks", details = "\leavevmode\printbibliography[subtype=conferencetalk, heading=none, resetnumbers=true]"),
                                              dict(name="Conference Posters", details = "\leavevmode\printbibliography[subtype=conferenceposter, heading=none, resetnumbers=true]"),
-                                             dict(name="Invited Talks", details = "\leavevmode\printbibliography[subtype=invited, heading=none, resetnumbers=true]"),
                                              dict(name="Outreach Talks", details = "\leavevmode\printbibliography[subtype=othertalk, heading=none, resetnumbers=true]")
                                              ]
                 else:
