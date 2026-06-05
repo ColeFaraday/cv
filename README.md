@@ -21,10 +21,18 @@ using `pip` with `pip3 install -r requirements.txt`.
 build the LaTeX documents with `latexmk` and `biber`.
 The Makefile can also:
 
-1. Stage to my website with `make stage`,
+1. Stage to my website with `make stage`. This copies the PDF, `cv.md`,
+   `papers.bib` and `talks.bib` into the website repo, and `rsync`s talk
+   slides from `assets/slides/` into the website's `assets/slides/`.
 2. Start a local jekyll server of my website with updated
   documents with `make jekyll`, and
-3. Push updated documents to my website with `make push`.
+3. Push updated documents to my website with `make push`. This stages,
+   then commits and pushes both the website repo and this CV source repo.
+   Override the commit message with `make push MSG="Add QM2026 talk"`
+   (defaults to `Update CV/pubs`).
+
+Talk slides live in `assets/slides/` here (the source of truth); the
+filename must match the `slides` field in `talks.bib`.
 
 # What to modify
 Change the content in `cv.yaml`.

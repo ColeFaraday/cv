@@ -10,12 +10,19 @@ PYENV_SETUP = \
 	eval "$$(pyenv init -)"; \
 	eval "$$(pyenv virtualenv-init -)";
 
-WEBSITE_DIR=${HOME}/Documents/Work/Obsidian/documents/projects/website/colefaraday.github.io
+WEBSITE_DIR=${HOME}/Documents/Work/documents/projects/website/colefaraday.github.io
 WEBSITE_PDF=$(WEBSITE_DIR)/assets/pdf/cv.pdf
 WEBSITE_PAPERS=$(WEBSITE_DIR)/_bibliography/papers.bib
 WEBSITE_TALKS=$(WEBSITE_DIR)/_bibliography/talks.bib
 WEBSITE_MD=$(WEBSITE_DIR)/_pages/cv.md
 WEBSITE_DATE=$(WEBSITE_DIR)/_includes/last-updated.txt
+WEBSITE_SLIDES=$(WEBSITE_DIR)/assets/slides
+
+# Local slides source of truth (drop new talk PDFs/PPTX here)
+SLIDES_DIR := assets/slides
+
+# Commit message for `make push` (override: make push MSG="...")
+MSG ?= Update CV/pubs
 
 TEMPLATES := $(shell find templates -type f)
 BUILD_DIR := build
@@ -100,14 +107,19 @@ stage: $(PDF) $(MD)
 	$(PYENV_SETUP) cp $(MD) $(WEBSITE_MD)
 	$(PYENV_SETUP) cp $(PAPERS) $(WEBSITE_PAPERS)
 	$(PYENV_SETUP) cp $(TALKS) $(WEBSITE_TALKS)
+	$(PYENV_SETUP) mkdir -p $(WEBSITE_SLIDES)
+	$(PYENV_SETUP) rsync -a $(SLIDES_DIR)/ $(WEBSITE_SLIDES)/
 
 jekyll: stage
 	$(PYENV_SETUP) cd $(WEBSITE_DIR) && bundle exec jekyll serve
 
 push: stage
-	$(PYENV_SETUP) git -C $(WEBSITE_DIR) add $(WEBSITE_PDF) $(WEBSITE_MD)
-	$(PYENV_SETUP) git -C $(WEBSITE_DIR) commit -m "Update CV."
+	$(PYENV_SETUP) git -C $(WEBSITE_DIR) add -A
+	$(PYENV_SETUP) git -C $(WEBSITE_DIR) commit -m "$(MSG)" || echo "website: nothing to commit"
 	$(PYENV_SETUP) git -C $(WEBSITE_DIR) push
+	$(PYENV_SETUP) git add -A
+	$(PYENV_SETUP) git commit -m "$(MSG)" || echo "cv: nothing to commit"
+	$(PYENV_SETUP) git push
 
 fetch-papers:
 	$(PYENV_SETUP) cd publications && fetch_inspire_bib_from_search "a Faraday, c" papers
