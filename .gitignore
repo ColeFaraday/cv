@@ -9,3 +9,6 @@ __pycache__
 venv
 auto
 .DS_Store
+/build/cv.bpx
+/build/cv.bbl
+/.DS_Store
