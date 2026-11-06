@@ -68,6 +68,7 @@ education:
     degree: Honours in Physics
     dates: 2022
     details:
+    thesis_label: Project
     thesis: Investigating the short path length corrections to jet phenomenology in heavy ion collisions
     supervisor: Assoc.\ Prof.\ W.\ A.\ Horowitz
     overallGPA: 85\%
@@ -76,6 +77,7 @@ education:
     location: Cape Town, South Africa
     degree: BSc in Physics and Mathematics
     dates: 2019--2021
+    thesis_label: Project
     thesis: Spontaneous symmetry breaking and the Higgs mechanism.
     supervisor: Assoc.\ Prof.\ Heribert Weigert
     overallGPA: 81\%
@@ -209,7 +211,7 @@ education:
 #       #   and hard links.
 
 honors:
-  - title: Best PhD Oral Presentation in Theoretical and Computational Physics at SAIP2025 Annual Conference
+  - title: Best PhD Oral Presentation, Theoretical and Computational Physics, SAIP 2025
     year: 2025
   - title: National Institute for Theoretical and Computational Sciences (NITHECS) Scholarship
     year: 2025 -- 2027

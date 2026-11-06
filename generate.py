@@ -370,7 +370,8 @@ def get_pub_latex(context, config):
     # Use \printbibliography to print the bibliography instead of manually constructing it.
     if config['use_print_bibliography']:
         contents['details'] = [ 
-                                             dict(name="Journal Articles", details = "\leavevmode\printbibliography[type=article, heading=none, resetnumbers=true]"),
+                                             dict(name="Journal Articles", details = "\leavevmode\printbibliography[type=article, check=journalarticles, heading=none, resetnumbers=true]"),
+                                             dict(name="Preprints", details = "\leavevmode\printbibliography[type=article, check=preprints, heading=none, resetnumbers=true]"),
                                              dict(name="Conference Papers", details = "\leavevmode\printbibliography[type=inproceedings, heading=none, resetnumbers=true]"),
                                              dict(name="Theses", details = "\leavevmode\printbibliography[type=thesis, heading=none, resetnumbers=true]") # see https://tex.stackexchange.com/questions/243649/biblatex-does-not-print-phdthesis
                                              ]

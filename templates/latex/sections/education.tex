@@ -15,14 +15,14 @@
   \begin{itemize}
   ~< if school.thesis >~
     ~< if school.thesis_url >~
-      \item Thesis: \href{<< school.thesis_url >>}{\textit{<< school.thesis >>}} \par
+      \item << school.thesis_label or 'Thesis' >>: \href{<< school.thesis_url >>}{\textit{<< school.thesis >>}} \par
     ~< else >~
-      \item Supervisor: \textit{<< school.thesis >>}
+      \item << school.thesis_label or 'Thesis' >>: \textit{<< school.thesis >>}
     ~< endif>~
   ~< endif >~
   ~< if school.supervisor >~
     ~< if school.supervisor_url >~
-      \item Thesis: \href{<< school.supervisor_url >>}{<< school.supervisor >>} \par
+      \item Supervisor: \href{<< school.supervisor_url >>}{<< school.supervisor >>} \par
     ~< else >~
       \item Supervisor: << school.supervisor >>
     ~< endif>~

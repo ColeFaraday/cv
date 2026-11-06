@@ -84,6 +84,25 @@
     {\thefield{year}}%
 }
 
+% The year already appears in the margin, so don't print a dangling "(Apr. )" after the venue.
+\renewbibmacro*{publisher+location+date}{%
+  \printlist{location}%
+  \iflistundef{publisher}
+    {\setunit*{\addcomma\space}}
+    {\setunit*{\addcolon\space}}%
+  \printlist{publisher}%
+  \newunit}
+
+\renewbibmacro*{institution+location+date}{%
+  \printlist{institution}%
+  \newunit
+  \printlist{location}%
+  \newunit}
+
+% Published or accepted articles vs. arXiv-only preprints
+\defbibcheck{journalarticles}{\iffieldundef{journaltitle}{\iffieldundef{note}{\skipentry}{}}{}}
+\defbibcheck{preprints}{\iffieldundef{journaltitle}{\iffieldundef{note}{}{\skipentry}}{\skipentry}}
+
 % https://tex.stackexchange.com/questions/313307/mastersthesis-entry-results-in-ma-thesis-output-instead-of-masters-thesis
 \DefineBibliographyStrings{english}{%
   mathesis = {M.Sc.\ thesis},
@@ -160,6 +179,7 @@
 \makecvtitle
 \vspace{-1cm}
 
+\needspace{12\baselineskip}
 \section{Education}
 % \vspace{-2mm}
 % \begin{itemize}
@@ -184,7 +204,7 @@
         (85\%)
     \hfill 2022 \par
   \begin{itemize}
-      \item Supervisor: \textit{Investigating the short path length corrections to jet phenomenology in heavy ion collisions}
+      \item Project: \textit{Investigating the short path length corrections to jet phenomenology in heavy ion collisions}
       \item Supervisor: Assoc.\ Prof.\ W.\ A.\ Horowitz
   \end{itemize}
   \vspace{3mm}
@@ -193,7 +213,7 @@
         (81\%)
     \hfill 2019--2021 \par
   \begin{itemize}
-      \item Supervisor: \textit{Spontaneous symmetry breaking and the Higgs mechanism.}
+      \item Project: \textit{Spontaneous symmetry breaking and the Higgs mechanism.}
       \item Supervisor: Assoc.\ Prof.\ Heribert Weigert
   \end{itemize}
   \vspace{3mm}
@@ -201,9 +221,10 @@
 \vspace{-3mm}
 
 
+\needspace{12\baselineskip}
 \section{Awards}
 % \begin{itemize}
- Best PhD Oral Presentation in Theoretical and Computational Physics at SAIP2025 Annual Conference  \hfill 2025    \\[0.5mm]
+ Best PhD Oral Presentation, Theoretical and Computational Physics, SAIP 2025  \hfill 2025    \\[0.5mm]
     \href{https://nithecs.ac.za/}{National Institute for Theoretical and Computational Sciences (NITHECS) Scholarship}  \hfill 2025 -- 2027    \\[0.5mm]
  Science Faculty PhD Fellowship, {\scriptsize \color{gray}{University of Cape Town}}  \hfill 2025 -- 2027    \\[0.5mm]
  Manuel \& Luby Washkansky Scholarship, {\scriptsize \color{gray}{University of Cape Town}}  \hfill 2023    \\[0.5mm]
@@ -216,6 +237,7 @@
 % \end{itemize}
 
 
+\needspace{12\baselineskip}
 \section{Publications}
 % \vspace{-8mm}
 % \hfill
@@ -243,11 +265,14 @@
 % \printbibliography[heading=none]
 % \end{refsection}
 
-% [{'name': 'Journal Articles', 'details': '\\leavevmode\\printbibliography[type=article, heading=none, resetnumbers=true]'}, {'name': 'Conference Papers', 'details': '\\leavevmode\\printbibliography[type=inproceedings, heading=none, resetnumbers=true]'}, {'name': 'Theses', 'details': '\\leavevmode\\printbibliography[type=thesis, heading=none, resetnumbers=true]'}]
+% [{'name': 'Journal Articles', 'details': '\\leavevmode\\printbibliography[type=article, check=journalarticles, heading=none, resetnumbers=true]'}, {'name': 'Preprints', 'details': '\\leavevmode\\printbibliography[type=article, check=preprints, heading=none, resetnumbers=true]'}, {'name': 'Conference Papers', 'details': '\\leavevmode\\printbibliography[type=inproceedings, heading=none, resetnumbers=true]'}, {'name': 'Theses', 'details': '\\leavevmode\\printbibliography[type=thesis, heading=none, resetnumbers=true]'}]
 
 \needspace{5\baselineskip}
 	\subsection{Journal Articles}
-	\leavevmode\printbibliography[type=article, heading=none, resetnumbers=true]
+	\leavevmode\printbibliography[type=article, check=journalarticles, heading=none, resetnumbers=true]
+\needspace{5\baselineskip}
+	\subsection{Preprints}
+	\leavevmode\printbibliography[type=article, check=preprints, heading=none, resetnumbers=true]
 \needspace{5\baselineskip}
 	\subsection{Conference Papers}
 	\leavevmode\printbibliography[type=inproceedings, heading=none, resetnumbers=true]
@@ -256,6 +281,7 @@
 	\leavevmode\printbibliography[type=thesis, heading=none, resetnumbers=true]
 
 
+\needspace{12\baselineskip}
 \section{Talks and Posters}
 Slides for my major presentations are available
 \href{https:www.coleridgefaraday.com/talks/}{here}
@@ -294,6 +320,7 @@ under a CC-BY license.
 %   % \end{longtable}
 
 
+\needspace{12\baselineskip}
 \section{Academic Service}
       Postgraduate representative for Physics Department, University of Cape Town
     \hfill 2025 -- Present \\
@@ -309,6 +336,7 @@ Proceedings of the 70th Annual Conference of the South African Institute of Phys
 ESKOM Science Expo 2025 Project Judge \\
 
 
+\needspace{12\baselineskip}
 \section{Teaching}
 \begin{minipage}[t]{0.8\textwidth}
 	\textbf{Third Year Particle Physics} (UCT), Tutor
@@ -360,6 +388,7 @@ ESKOM Science Expo 2025 Project Judge \\
 \end{minipage}\\
 
 
+\needspace{12\baselineskip}
 \section{Mentorship roles}
 \begin{minipage}[t]{0.8\textwidth}
 	\textbf{Ben Bert}. Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT

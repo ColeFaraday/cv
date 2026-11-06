@@ -84,6 +84,25 @@
     {\thefield{year}}%
 }
 
+% The year already appears in the margin, so don't print a dangling "(Apr. )" after the venue.
+\renewbibmacro*{publisher+location+date}{%
+  \printlist{location}%
+  \iflistundef{publisher}
+    {\setunit*{\addcomma\space}}
+    {\setunit*{\addcolon\space}}%
+  \printlist{publisher}%
+  \newunit}
+
+\renewbibmacro*{institution+location+date}{%
+  \printlist{institution}%
+  \newunit
+  \printlist{location}%
+  \newunit}
+
+% Published or accepted articles vs. arXiv-only preprints
+\defbibcheck{journalarticles}{\iffieldundef{journaltitle}{\iffieldundef{note}{\skipentry}{}}{}}
+\defbibcheck{preprints}{\iffieldundef{journaltitle}{\iffieldundef{note}{}{\skipentry}}{\skipentry}}
+
 % https://tex.stackexchange.com/questions/313307/mastersthesis-entry-results-in-ma-thesis-output-instead-of-masters-thesis
 \DefineBibliographyStrings{english}{%
   mathesis = {M.Sc.\ thesis},

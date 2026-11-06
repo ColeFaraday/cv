@@ -71,7 +71,7 @@ toc:
 
 			<ul>
         <li> <p style="margin: 0.2em 0 0 0;">
-            Thesis: <em>Investigating the short path length corrections to jet phenomenology in heavy ion collisions</em><br>
+            Project: <em>Investigating the short path length corrections to jet phenomenology in heavy ion collisions</em><br>
         </p>
         </li>
 
@@ -95,7 +95,7 @@ toc:
 
 			<ul>
         <li> <p style="margin: 0.2em 0 0 0;">
-            Thesis: <em>Spontaneous symmetry breaking and the Higgs mechanism.</em><br>
+            Project: <em>Spontaneous symmetry breaking and the Higgs mechanism.</em><br>
         </p>
         </li>
 
@@ -116,7 +116,7 @@ toc:
   <td>
   <div style='float: right'>2025</div>
   <div>
-        Best PhD Oral Presentation in Theoretical and Computational Physics at SAIP2025 Annual Conference
+        Best PhD Oral Presentation, Theoretical and Computational Physics, SAIP 2025
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2025</td> -->

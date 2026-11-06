@@ -20,9 +20,9 @@
       {% if school.thesis %}
         <li> <p style="margin: 0.2em 0 0 0;">
           {% if school.thesis_url %}
-            Thesis: <a href="{{ school.thesis_url }}"><em>{{ school.thesis }}</em></a><br>
+            {{ school.thesis_label or 'Thesis' }}: <a href="{{ school.thesis_url }}"><em>{{ school.thesis }}</em></a><br>
           {% else %}
-            Thesis: <em>{{ school.thesis }}</em><br>
+            {{ school.thesis_label or 'Thesis' }}: <em>{{ school.thesis }}</em><br>
           {% endif %}
         </p>
         </li>
