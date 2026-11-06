@@ -275,9 +275,12 @@ advising:
     details: "Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT"
   - year: 2024 -- Present
     name: Tiaan van der Merwe
-    details: "Mentoring and helping with honours project on phenomenological energy loss at UCT"
+    details: "Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT"
   - year: 2025 -- Present
     name: Jack Brand
+    details: "Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT"
+  - year: 2026
+    name: Daniel Broomhall
     details: "Mentoring and helping with honours project on phenomenological energy loss at UCT"
 
 service:
@@ -286,6 +289,7 @@ service:
     - "Annals of Physics"
     - "Proceedings of the 68th Annual Conference of the South African Institute of Physics"
     - "Proceedings of the 69th Annual Conference of the South African Institute of Physics"
+    - "Proceedings of the 70th Annual Conference of the South African Institute of Physics"
     - "ESKOM Science Expo 2025 Project Judge"
 
   main:
@@ -326,6 +330,10 @@ skills:
   #   details: Linux, emacs, vim, evil, org, mu4e, xmonad, git, tmux, zsh
 
 teaching:
+  - semester: 2026
+    name: Third Year Particle Physics
+    short: UCT
+    position: Tutor
   - semester: 2025
     name: Quantum Field Theory II
     short: \href{https://nithecs.ac.za/south-african-theory-and-computational-school/}{SATACS}

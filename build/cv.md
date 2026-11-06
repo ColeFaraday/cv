@@ -285,6 +285,9 @@ Slides for my presentations are linked below under a CC-BY license.
   <td style='padding-right:0;'>Proceedings of the 69th Annual Conference of the South African Institute of Physics</td>
 </tr>
 <tr>
+  <td style='padding-right:0;'>Proceedings of the 70th Annual Conference of the South African Institute of Physics</td>
+</tr>
+<tr>
   <td style='padding-right:0;'>ESKOM Science Expo 2025 Project Judge</td>
 </tr>
 </table>
@@ -292,6 +295,10 @@ Slides for my presentations are linked below under a CC-BY license.
 
 ## Teaching
 <table class="table table-hover">
+<tr>
+  <td style='padding-right:0'><strong>Third Year Particle Physics</strong> (UCT), Tutor</td>
+  <td class='col-md-2' style='text-align:right; padding-left:0;'>2026</td>
+</tr>
 <tr>
   <td style='padding-right:0'><strong>Quantum Field Theory II</strong> (<a href="https://nithecs.ac.za/south-african-theory-and-computational-school/" target="_blank">SATACS</a>), Tutor</td>
   <td class='col-md-2' style='text-align:right; padding-left:0;'>2025</td>
@@ -333,14 +340,20 @@ Slides for my presentations are linked below under a CC-BY license.
 </tr>
 <tr>
   <td style='padding-right:0;'>
-        Tiaan van der Merwe (Mentoring and helping with honours project on phenomenological energy loss at UCT)
+        Tiaan van der Merwe (Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT)
   </td>
   <td class='col-md-3' style='text-align:right; padding-left:0;'>2024&nbsp;-&nbsp;Present</td>
 </tr>
 <tr>
   <td style='padding-right:0;'>
-        Jack Brand (Mentoring and helping with honours project on phenomenological energy loss at UCT)
+        Jack Brand (Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT)
   </td>
   <td class='col-md-3' style='text-align:right; padding-left:0;'>2025&nbsp;-&nbsp;Present</td>
+</tr>
+<tr>
+  <td style='padding-right:0;'>
+        Daniel Broomhall (Mentoring and helping with honours project on phenomenological energy loss at UCT)
+  </td>
+  <td class='col-md-3' style='text-align:right; padding-left:0;'>2026</td>
 </tr>
 </table>
