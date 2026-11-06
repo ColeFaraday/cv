@@ -291,6 +291,8 @@ service:
   main:
     - details: Postgraduate representative for Physics Department, University of Cape Town
       year: 2025 -- Present
+    - details: Organizer, UCT Physics Postgraduate Showcase
+      year: 2025, 2026
     # - details: NeurIPS Area Chair
     #   year: 2024
     # - details: NeurIPS Datasets and Benchmarks Area Chair

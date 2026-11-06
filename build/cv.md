@@ -262,6 +262,12 @@ Slides for my presentations are linked below under a CC-BY license.
   </td>
   <td class='col-md-3' style='text-align:right; padding-left:0;'>2025&nbsp;-&nbsp;Present</td>
 </tr>
+<tr>
+  <td style='padding-right:0;'>
+      Organizer, UCT Physics Postgraduate Showcase
+  </td>
+  <td class='col-md-3' style='text-align:right; padding-left:0;'>2025, 2026</td>
+</tr>
 </table>
 
 ### Reviewing
