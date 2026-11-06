@@ -48,12 +48,12 @@ education:
   - school: University of Cape Town
     location: Cape Town, South Africa
     degree: PhD in Physics
-    dates: 2025--Present # May 19, 2019
+    dates: 2025 -- Present # May 19, 2019
     supervisor: Assoc.\ Prof.\ W. A. Horowitz
   - school: University of Cape Town
     location: Cape Town, South Africa
     degree: MSc with Distinction in Physics
-    dates: 2023--2024
+    dates: 2023 -- 2024
     overallGPA: 90\%
     thesis: Energy Loss and Theoretical Uncertainties in Small Quark-Gluon Plasmas
     supervisor: Assoc.\ Prof.\ W.\ A.\ Horowitz
@@ -76,7 +76,7 @@ education:
   - school: University of Cape Town
     location: Cape Town, South Africa
     degree: BSc in Physics and Mathematics
-    dates: 2019--2021
+    dates: 2019 -- 2021
     thesis_label: Project
     thesis: Spontaneous symmetry breaking and the Higgs mechanism.
     supervisor: Assoc.\ Prof.\ Heribert Weigert
@@ -233,8 +233,7 @@ honors:
     descr: University of Cape Town
   - title: Dean’s Merit List
     year: 2019, 2021
-    descr: University of Cape Town
-    note: No awards were given in 2020 due to the COVID-19 pandemic
+    descr: University of Cape Town (not awarded in 2020 due to COVID-19)
   - title: UCT Mathematics Olympiad Gold Award
     year: 2015, 2016
     url: https://www.uctmathscompetition.org.za/home
@@ -274,16 +273,16 @@ talks:
 advising:
   - year: 2023 -- Present
     name: Ben Bert
-    details: "Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT"
+    details: "Research mentor for honours and MSc projects in phenomenological energy loss at UCT"
   - year: 2024 -- Present
     name: Tiaan van der Merwe
-    details: "Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT"
+    details: "Research mentor for honours and MSc projects in phenomenological energy loss at UCT"
   - year: 2025 -- Present
     name: Jack Brand
-    details: "Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT"
+    details: "Research mentor for honours and MSc projects in phenomenological energy loss at UCT"
   - year: 2026
     name: Daniel Broomhall
-    details: "Mentoring and helping with honours project on phenomenological energy loss at UCT"
+    details: "Research mentor for an honours project in phenomenological energy loss at UCT"
 
 service:
   reviewing:
@@ -340,7 +339,7 @@ teaching:
     name: Quantum Field Theory II
     short: \href{https://nithecs.ac.za/south-african-theory-and-computational-school/}{SATACS}
     position: Tutor
-  - semester: 2024,2025
+  - semester: 2024, 2025
     name: Quantum Field Theory I
     short: \href{https://nithecs.ac.za/south-african-theory-and-computational-school/}{SATACS}
     position: Tutor
@@ -352,7 +351,7 @@ teaching:
     name: Honours Quantum Mechanics
     short: UCT
     position: Tutor
-  - semester: 2023,2025
+  - semester: 2023, 2025
     name: Third Year Statistical Physics
     short: UCT
     position: Tutor
@@ -360,7 +359,7 @@ teaching:
     name: First Year Physics (with laboratory)
     short: UCT
     position: Tutor
-  - semester: 2019--2022
+  - semester: 2019 -- 2022
     name: High School Physics, Mathematics, Chemistry, and Computer Science
     short: Chit-Chat Tutoring
     position: Private Tutor

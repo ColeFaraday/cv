@@ -108,6 +108,24 @@
   mathesis = {M.Sc.\ thesis},
 }
 
+% Compact talk entries: title, venue, location, one date (the name is omitted; mark invited talks
+% by adding keywords = {invited} to the entry).
+\DeclareBibliographyDriver{misc}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{title}%
+  \setunit{\addperiod\space}\newunit
+  \ifkeyword{invited}{\printtext{Invited.}\space}{}%
+  \iffieldundef{url}
+    {\printfield{note}}
+    {\href{\thefield{url}}{\printfield{note}}}%
+  \newunit\newblock
+  \printlist{location}%
+  \newunit\newblock
+  \usebibmacro{date}%
+  \newunit\newblock
+  \usebibmacro{finentry}}
+
 % \DeclareBibliographyDriver{misc}{%
 %   \usebibmacro{bibindex}%
 %   \usebibmacro{begentry}%
@@ -169,6 +187,7 @@
 \social[arxiv]{<< social.arxiv >>}
 % \social[github]{<<social.github>>}
 % \social[arxiv]{<< social.arxiv >>}
+\AtBeginDocument{\renewcommand*{\inspiresocialsymbol}{{\color{inspire}{\small\aiInspire}}~INSPIRE~}}
 \extrainfo{\small Last updated on \today}
 
 ~< if photo >~

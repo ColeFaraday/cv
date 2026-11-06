@@ -22,7 +22,7 @@ toc:
         <div>
           <strong>PhD in Physics</strong>, <i>University of Cape Town</i>
         </div>
-        <div class="cvdate" style="white-space: nowrap;">2025-Present</div>
+        <div class="cvdate" style="white-space: nowrap;">2025&nbsp;-&nbsp;Present</div>
       </div>
 
 			<ul>
@@ -42,7 +42,7 @@ toc:
           <strong>MSc with Distinction in Physics</strong>, <i>University of Cape Town</i>
             (90%)
         </div>
-        <div class="cvdate" style="white-space: nowrap;">2023-2024</div>
+        <div class="cvdate" style="white-space: nowrap;">2023&nbsp;-&nbsp;2024</div>
       </div>
 
 			<ul>
@@ -90,7 +90,7 @@ toc:
           <strong>BSc in Physics and Mathematics</strong>, <i>University of Cape Town</i>
             (81%)
         </div>
-        <div class="cvdate" style="white-space: nowrap;">2019-2021</div>
+        <div class="cvdate" style="white-space: nowrap;">2019&nbsp;-&nbsp;2021</div>
       </div>
 
 			<ul>
@@ -184,7 +184,7 @@ toc:
   <div style='float: right'>2019, 2021</div>
   <div>
         Dean’s Merit List
-    <br><p style="color:grey; font-size:0.9rem">University of Cape Town</p>
+    <br><p style="color:grey; font-size:0.9rem">University of Cape Town (not awarded in 2020 due to COVID-19)</p>
   </div>
   </td>
   <!-- <td class='col-md-2' style='text-align:right;'>2019, 2021</td> -->
@@ -305,7 +305,7 @@ Slides for my presentations are linked below under a CC-BY license.
 </tr>
 <tr>
   <td style='padding-right:0'><strong>Quantum Field Theory I</strong> (<a href="https://nithecs.ac.za/south-african-theory-and-computational-school/" target="_blank">SATACS</a>), Tutor</td>
-  <td class='col-md-2' style='text-align:right; padding-left:0;'>2024,2025</td>
+  <td class='col-md-2' style='text-align:right; padding-left:0;'>2024, 2025</td>
 </tr>
 <tr>
   <td style='padding-right:0'><strong>Honours Statistical Physics</strong> (UCT), Tutor</td>
@@ -317,7 +317,7 @@ Slides for my presentations are linked below under a CC-BY license.
 </tr>
 <tr>
   <td style='padding-right:0'><strong>Third Year Statistical Physics</strong> (UCT), Tutor</td>
-  <td class='col-md-2' style='text-align:right; padding-left:0;'>2023,2025</td>
+  <td class='col-md-2' style='text-align:right; padding-left:0;'>2023, 2025</td>
 </tr>
 <tr>
   <td style='padding-right:0'><strong>First Year Physics (with laboratory)</strong> (UCT), Tutor</td>
@@ -325,7 +325,7 @@ Slides for my presentations are linked below under a CC-BY license.
 </tr>
 <tr>
   <td style='padding-right:0'><strong>High School Physics, Mathematics, Chemistry, and Computer Science</strong> (Chit-Chat Tutoring), Private Tutor</td>
-  <td class='col-md-2' style='text-align:right; padding-left:0;'>2019-2022</td>
+  <td class='col-md-2' style='text-align:right; padding-left:0;'>2019&nbsp;-&nbsp;2022</td>
 </tr>
 </table>
 
@@ -334,25 +334,25 @@ Slides for my presentations are linked below under a CC-BY license.
 <table class="table table-hover">
 <tr>
   <td style='padding-right:0;'>
-        Ben Bert (Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT)
+        Ben Bert (Research mentor for honours and MSc projects in phenomenological energy loss at UCT)
   </td>
   <td class='col-md-3' style='text-align:right; padding-left:0;'>2023&nbsp;-&nbsp;Present</td>
 </tr>
 <tr>
   <td style='padding-right:0;'>
-        Tiaan van der Merwe (Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT)
+        Tiaan van der Merwe (Research mentor for honours and MSc projects in phenomenological energy loss at UCT)
   </td>
   <td class='col-md-3' style='text-align:right; padding-left:0;'>2024&nbsp;-&nbsp;Present</td>
 </tr>
 <tr>
   <td style='padding-right:0;'>
-        Jack Brand (Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT)
+        Jack Brand (Research mentor for honours and MSc projects in phenomenological energy loss at UCT)
   </td>
   <td class='col-md-3' style='text-align:right; padding-left:0;'>2025&nbsp;-&nbsp;Present</td>
 </tr>
 <tr>
   <td style='padding-right:0;'>
-        Daniel Broomhall (Mentoring and helping with honours project on phenomenological energy loss at UCT)
+        Daniel Broomhall (Research mentor for an honours project in phenomenological energy loss at UCT)
   </td>
   <td class='col-md-3' style='text-align:right; padding-left:0;'>2026</td>
 </tr>

@@ -108,6 +108,24 @@
   mathesis = {M.Sc.\ thesis},
 }
 
+% Compact talk entries: title, venue, location, one date (the name is omitted; mark invited talks
+% by adding keywords = {invited} to the entry).
+\DeclareBibliographyDriver{misc}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{title}%
+  \setunit{\addperiod\space}\newunit
+  \ifkeyword{invited}{\printtext{Invited.}\space}{}%
+  \iffieldundef{url}
+    {\printfield{note}}
+    {\href{\thefield{url}}{\printfield{note}}}%
+  \newunit\newblock
+  \printlist{location}%
+  \newunit\newblock
+  \usebibmacro{date}%
+  \newunit\newblock
+  \usebibmacro{finentry}}
+
 % \DeclareBibliographyDriver{misc}{%
 %   \usebibmacro{bibindex}%
 %   \usebibmacro{begentry}%
@@ -169,6 +187,7 @@
 \social[arxiv]{faraday\_c\_1}
 % \social[github]{}
 % \social[arxiv]{faraday\_c\_1}
+\AtBeginDocument{\renewcommand*{\inspiresocialsymbol}{{\color{inspire}{\small\aiInspire}}~INSPIRE~}}
 \extrainfo{\small Last updated on \today}
 
 
@@ -185,7 +204,7 @@
 % \begin{itemize}
     % \item 
     \textbf{PhD in Physics}, \emph{University of Cape Town}
-    \hfill 2025--Present \par
+    \hfill 2025 -- Present \par
   \begin{itemize}
       \item Supervisor: Assoc.\ Prof.\ W. A. Horowitz
   \end{itemize}
@@ -193,7 +212,7 @@
     % \item 
     \textbf{MSc with Distinction in Physics}, \emph{University of Cape Town}
         (90\%)
-    \hfill 2023--2024 \par
+    \hfill 2023 -- 2024 \par
   \begin{itemize}
       \item Thesis: \href{https://inspirehep.net/literature/2928736}{\textit{Energy Loss and Theoretical Uncertainties in Small Quark-Gluon Plasmas}} \par
       \item Supervisor: Assoc.\ Prof.\ W.\ A.\ Horowitz
@@ -211,7 +230,7 @@
     % \item 
     \textbf{BSc in Physics and Mathematics}, \emph{University of Cape Town}
         (81\%)
-    \hfill 2019--2021 \par
+    \hfill 2019 -- 2021 \par
   \begin{itemize}
       \item Project: \textit{Spontaneous symmetry breaking and the Higgs mechanism.}
       \item Supervisor: Assoc.\ Prof.\ Heribert Weigert
@@ -231,7 +250,7 @@
     \href{https://tlabs.ac.za/sa-cern/}{SA-CERN Excellence Scholarship}  \hfill 2023 -- 2024    \\[0.5mm]
  Science Faculty Scholarship, {\scriptsize \color{gray}{University of Cape Town}}  \hfill 2020    \\[0.5mm]
  Science Faculty Entrance Scholarship, {\scriptsize \color{gray}{University of Cape Town}}  \hfill 2019    \\[0.5mm]
- Dean’s Merit List, {\scriptsize \color{gray}{University of Cape Town}}  \hfill 2019, 2021, \footnote{No awards were given in 2020 due to the COVID-19 pandemic}    \\[0.5mm]
+ Dean’s Merit List, {\scriptsize \color{gray}{University of Cape Town (not awarded in 2020 due to COVID-19)}}  \hfill 2019, 2021    \\[0.5mm]
     \href{https://www.uctmathscompetition.org.za/home}{UCT Mathematics Olympiad Gold Award}  \hfill 2015, 2016    \\[0.5mm]
  Professor John Webb Mathematics Scholarship, {\scriptsize \color{gray}{Wynberg Boys' High School}}  \hfill 2014 -- 2018    \\[0.5mm]
 % \end{itemize}
@@ -354,7 +373,7 @@ ESKOM Science Expo 2025 Project Judge \\
 	\textbf{Quantum Field Theory I} (\href{https://nithecs.ac.za/south-african-theory-and-computational-school/}{SATACS}), Tutor
 \end{minipage}\hfill
 \begin{minipage}[t]{0.2\textwidth}
-  \hfill 2024,2025 
+  \hfill 2024, 2025 
 \end{minipage}\\
 \begin{minipage}[t]{0.8\textwidth}
 	\textbf{Honours Statistical Physics} (UCT), Tutor
@@ -372,7 +391,7 @@ ESKOM Science Expo 2025 Project Judge \\
 	\textbf{Third Year Statistical Physics} (UCT), Tutor
 \end{minipage}\hfill
 \begin{minipage}[t]{0.2\textwidth}
-  \hfill 2023,2025 
+  \hfill 2023, 2025 
 \end{minipage}\\
 \begin{minipage}[t]{0.8\textwidth}
 	\textbf{First Year Physics (with laboratory)} (UCT), Tutor
@@ -384,36 +403,36 @@ ESKOM Science Expo 2025 Project Judge \\
 	\textbf{High School Physics, Mathematics, Chemistry, and Computer Science} (Chit-Chat Tutoring), Private Tutor
 \end{minipage}\hfill
 \begin{minipage}[t]{0.2\textwidth}
-  \hfill 2019--2022 
+  \hfill 2019 -- 2022 
 \end{minipage}\\
 
 
 \needspace{12\baselineskip}
 \section{Mentorship roles}
 \begin{minipage}[t]{0.8\textwidth}
-	\textbf{Ben Bert}. Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT
+	\textbf{Ben Bert}. Research mentor for honours and MSc projects in phenomenological energy loss at UCT
 \end{minipage}\hfill
 \begin{minipage}[t]{0.2\textwidth}
   \hfill 2023 -- Present 
-\end{minipage}\\
+\end{minipage}\\[2mm]
 \begin{minipage}[t]{0.8\textwidth}
-	\textbf{Tiaan van der Merwe}. Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT
+	\textbf{Tiaan van der Merwe}. Research mentor for honours and MSc projects in phenomenological energy loss at UCT
 \end{minipage}\hfill
 \begin{minipage}[t]{0.2\textwidth}
   \hfill 2024 -- Present 
-\end{minipage}\\
+\end{minipage}\\[2mm]
 \begin{minipage}[t]{0.8\textwidth}
-	\textbf{Jack Brand}. Mentoring and helping with honours and MSc projects on phenomenological energy loss at UCT
+	\textbf{Jack Brand}. Research mentor for honours and MSc projects in phenomenological energy loss at UCT
 \end{minipage}\hfill
 \begin{minipage}[t]{0.2\textwidth}
   \hfill 2025 -- Present 
-\end{minipage}\\
+\end{minipage}\\[2mm]
 \begin{minipage}[t]{0.8\textwidth}
-	\textbf{Daniel Broomhall}. Mentoring and helping with honours project on phenomenological energy loss at UCT
+	\textbf{Daniel Broomhall}. Research mentor for an honours project in phenomenological energy loss at UCT
 \end{minipage}\hfill
 \begin{minipage}[t]{0.2\textwidth}
   \hfill 2026 
-\end{minipage}\\
+\end{minipage}\\[2mm]
 
 
 
